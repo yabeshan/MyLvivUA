@@ -26,14 +26,19 @@
     <link rel="icon" href="../app/iconsfavicon.ico">
 
     <script>
-        setTimeout(function(){
-            if (navigator && navigator.splashscreen) {
-                navigator.splashscreen.hide();
-                alert( "hide = " + navigator.splashscreen.hide );
-            } else {
-                alert( "hide = " + navigator );
-            }
-        }, 6000);
+        var onDeviceReady = function() {
+            alert("onDeviceReady");
+            setTimeout(function(){
+                if (navigator && navigator.splashscreen) {
+                    navigator.splashscreen.hide();
+                    alert( "hide = " + navigator.splashscreen.hide );
+                } else {
+                    alert( "navigator = " + navigator );
+                }
+            }, 6000);
+        };
+
+        document.addEventListener('deviceready', onDeviceReady, false);
     </script>
 
 </head>
