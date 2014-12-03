@@ -12,8 +12,8 @@
         Мій Львів
     </description>
 
-    <gap:plugin name="com.phonegap.plugin.statusbar"        version="1.1.0" />
-    <gap:plugin name="org.apache.cordova.dialogs"           version="0.2.6" />
+    <gap:plugin name="com.phonegap.plugin.statusbar"        />
+    <gap:plugin name="org.apache.cordova.dialogs"           />
     <gap:plugin name="org.apache.cordova.geolocation"       />
     <gap:plugin name="org.apache.cordova.splashscreen" />
 
