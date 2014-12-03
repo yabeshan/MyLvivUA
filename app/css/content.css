@@ -1,0 +1,50 @@
+
+.thumb-big {
+    float: left;padding-bottom: 11px;padding-right: 11px;
+}
+.thumb-small {
+    width: 60px; padding-bottom: 11px;
+}
+
+.panel-default-content {
+    background-color: rgba(0,0,0,0);
+    border: none;margin: 0px !important;
+    border-top: 1px solid #e4e3e3;
+}
+
+.panel-default-content .catalog-accordion-title {
+    height: 35px;padding: 9px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    background: -webkit-linear-gradient(#9bce6b, #87b45d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#9bce6b, #87b45d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#9bce6b, #87b45d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#9bce6b, #87b45d); /* Standard syntax */
+}
+.panel-default-content i {
+    position:relative;top: -8px;font-size: 25px;font-family: Courier, monospace;font-weight: bold;margin-left: 50px;
+}
+.panel-default-content a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+.panel-body {
+    padding: 0px;
+}
+
+.menu-panel-list-next {
+    float:right;color: #FFF;text-shadow: -1px 0px #000
+}
+
+.menu-panel-list-title {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    vertical-align: bottom;
+    white-space: nowrap;
+    overflow: hidden;
+}

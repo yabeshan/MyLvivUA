@@ -1,0 +1,318 @@
+
+#popup-modal {
+    visibility: hidden;
+    position: absolute;z-index: 100;
+    width: 100%;height: 100%;background-color: rgba(255,255,255,.2);
+}
+
+#popup-share {
+    visibility: hidden;
+    position: absolute;z-index: 101;
+    width: 500px;height: 220px;background-color: #fff;
+    left:50%;top:50%;
+    margin-left: -250px;
+    margin-top: -110px;
+    border: 5px solid #dad9d9;
+    box-shadow: 0px 0px 30px #666;
+}
+#popup-share > h1 {
+    color:#666;font-size: 18px;width: 100%;text-align: center;
+}
+#popup-share > img {
+    padding: 30px 30px 30px 45px;
+    cursor: pointer;
+}
+
+
+#popup-note {
+    visibility: hidden;
+    position: absolute;z-index: 101;
+    width: 420px;height: 440px;background-color: #fff;
+    left:50%;top:50%;
+    margin-left: -210px;
+    margin-top: -220px;
+    border: 5px solid #dad9d9;
+    box-shadow: 0px 0px 30px #666;
+}
+#popup-note > h1 {
+    color:#666;font-size: 18px;width: 100%;text-align: center;
+}
+#popup-note-save-btn {
+    position: absolute;bottom: 10px;right: 170px;
+    width: 150px;height: 33px;cursor: pointer;
+    background-color: #7ddaf8;color: #fff;text-align: center;padding-top: 5px;
+}
+#popup-note-cancel-btn {
+    position: absolute;bottom: 10px;right: 10px;
+    width: 150px;height: 33px;cursor: pointer;
+    background-color: #f87d7d;color: #fff;text-align: center;padding-top: 5px;
+}
+
+.drag-popup {
+    position: absolute;width: 34px;height: 34px;background-color: #DDD;
+    border: 1px solid #999;padding: 5px;
+    left: 10px;top:10px;cursor: move;
+}
+
+#popup-settings {
+    visibility: hidden;
+    position: absolute;z-index: 101;
+    width: 600px;height: 400px;background-color: #fff;
+    left:50%;top:50%;
+    margin-left: -300px;
+    margin-top: -200px;
+    border: 5px solid #dad9d9;
+    box-shadow: 0px 0px 30px #666;
+}
+.popup-settings-title {
+    color:#666;font-size: 18px;width: 100%;text-align: center;
+}
+
+.popup-settings-ad-btn {
+    background-color: #3dbc61; width: 203px; height: 30px;color: #fff;
+    margin-top: 5px;padding: 5px; margin-left: 59px;cursor: pointer;
+}
+
+#popup-settings-list {
+    /*visibility: hidden;*/
+    position: absolute;background-color: #FFF;height: 100%;
+    top:0px;left: 0px;left: 10px; right: 30px;overflow-y: auto;
+}
+.popup-settings-list-title {
+    background-color: #f0f0f0;font-weight: bold;margin: 0px;text-align: center;
+}
+#popup-settings-list-item {
+    margin: 0px;padding-left: 30px;zoom: .7;
+}
+
+
+#popup-trip-planner {
+    visibility: hidden;
+    position: absolute;z-index: 101;
+    width: 420px;height: 440px;background-color: #fff;
+    left:50%;top:50%;
+    margin-left: -210px;
+    margin-top: -220px;
+    border: 5px solid #dad9d9;
+    box-shadow: 0px 0px 30px #666;
+}
+#popup-trip-planner > h1 {
+    color:#666;font-size: 18px;width: 100%;text-align: center;
+}
+
+#popup-info {
+    visibility: hidden;
+    position: absolute;z-index: 101;
+    width: 420px;height: 440px;background-color: #fff;
+    left:50%;top:50%;
+    margin-left: -210px;
+    margin-top: -220px;
+    /*border: 5px solid #dad9d9;*/
+    box-shadow: 0px 0px 30px #666;
+}
+#popup-info > h1 {
+    color:#666;font-size: 18px;width: 100%;text-align: center;
+}
+.popup-info-blue {
+    border: 5px solid #3366a6;
+}
+.popup-info-green {
+    border: 5px solid #88a654;
+}
+.popup-info-orange {
+    border: 5px solid #d97720;
+}
+.popup-info-pink {
+    border: 5px solid #c4407b;
+}
+#popup-info-img {
+    width:180px;height:180px;margin: 3px 20px 20px 10px;float: right;background-color: #CCC;border: 1px solid #999;
+}
+#popup-info-nav {
+    width: 180px;margin-right: 20px;float: right;clear: right;
+}
+.popup-info-nav-btn {
+    background-color: #3dbc61; width: 180px; height: 30px;color: #fff;
+    margin-bottom: 5px;padding: 5px;cursor: pointer;text-align: center;
+}
+#popup-info-text {
+    padding: 0px;height: 372px;overflow: hidden;font-size: 12px;
+}
+.popup-info-text-icon {
+    font-size: 15px;padding: 5px;
+}
+.green {
+    color:#060;font-size: 20px;cursor: pointer;
+}
+.grey {
+    color:#BBB;font-size: 20px;cursor: pointer;
+}
+#popup-info-close-btn {
+    color: #838383;font-size: 28px;position: absolute;top:-1px;right: -29px;cursor: pointer;background-color: rgba(255,255,255,.7);
+}
+#popup-info-title {
+    padding: 0px 10px 0px 10px;
+}
+#popup-info-coord {
+    cursor: pointer;
+}
+#popup-info-address {
+    cursor: pointer;
+}
+#popup-info-mobile {
+    cursor: pointer;
+}
+#popup-info-site {
+    cursor: pointer;
+}
+#popup-info-time-red {
+    color: #C00;padding-left: 16px;
+}
+#popup-info-time-black {
+    color: #000;padding-left: 16px;
+}
+#popup-info-details {
+    padding-left: 10px;
+}
+.top-day {
+    font-size: 12px;margin-top: -23px;margin-left: 26px;font-family: "Courier New", "Tahoma";
+}
+.top-day-red {
+    font-size: 12px;margin-top: -26px;margin-left: 113px;font-family: "Courier New", "Tahoma";color: #C00;
+}
+.bottom-day {
+    font-size: 12px;margin-top: -8px;margin-left: 26px;font-family: "Courier New", "Tahoma";
+}
+.bottom-day-red {
+    font-size: 12px;margin-top: -9px;margin-left: 113px;font-family: "Courier New", "Tahoma";color: #C00;
+}
+#panel-marker {
+    visibility: hidden;
+    position: absolute;
+    top:50px;left:0px;height: 70px;width: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+.history-badge {
+     float:right;background-color: #3366a6;
+}
+.service-badge {
+    float:right;background-color: #88a654;
+}
+.restory-badge {
+    float:right;background-color: #d97720;
+}
+.enter-badge {
+    float:right;background-color: #c4407b;
+}
+
+
+#panel-marker-detals {
+    visibility: hidden;
+    position: absolute;
+    top:120px;left:0px;height: 70px;width: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+#panel-marker-detals .badge {
+    float:right;
+}
+
+#panel-marker-list {
+    visibility: hidden;
+    position: absolute;width:290px;
+    top:190px;left:0px;bottom: 50px;
+    background-color: rgba(0,0,0,.4);
+}
+#panel-marker-list-holder {
+    margin-top:30px;margin-left: 20px;
+    height: 90%;overflow-y: auto;width:280px;
+}
+.panel-marker-list-item {
+    width: 100%;min-height: 40px;border-top: 1px #CCC solid;
+    color: #CCC;background-color: rgba(50,50,50,.8);cursor: pointer;
+    padding: 10px;
+}
+
+#panel-tours-list {
+    visibility: hidden;
+    position: absolute;
+    top:50px;left:0px;height: 230px;width: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+.panel-tours-list-item {
+    border-bottom: 1px solid #999;height: 40px;
+    color: #CCC;background-color: #333;cursor: pointer;text-align: left;
+    padding: 10px;
+}
+.panel-tours-list-item:hover {
+    background-color: #666;
+}
+
+.checkbox>label>div {
+    padding: 7px 0px 0px 10px;font-size: 15px;
+}
+.checkbox>label>input {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+
+.collapse-tour {
+    background-color: #222;padding: 15px;height: 170px;color: #ddd;
+}
+
+.coming-soon-panel {
+    position: absolute;width: 100%;top:0px;bottom: 0px;
+    /*background-color: rgba(250,250,250,.2);*/
+    padding: 240px 20px 0px 180px;color: #f00;font-size: 18px;
+}
+
+#popup-search-panel {
+    visibility: hidden;
+    position: absolute;top:13%;left: 50%;margin-left: -175px;
+    width: 350px; min-height: 30px;border: 3px solid #999;
+    background-color: rgba(250,250,250,.7);padding: 10px;z-index: 99;
+}
+
+#pac-input {
+    background-color: rgba(0,0,0,0);border: none;font-size: 20px;width: 274px;
+}
+
+#popup-route-builder {
+    visibility: hidden;
+    position: absolute;z-index: 101;
+    width: 720px;height: 440px;background-color: #fff;
+    left:50%;top:50%;
+    margin-left: -360px;
+    margin-top: -220px;
+    border: 5px solid #dad9d9;
+    box-shadow: 0px 0px 30px #666;
+}
+#popup-route-builder > h1 {
+    color:#666;font-size: 18px;width: 100%;text-align: center;
+}
+
+.popup-route-builder-input-holder {
+    background-color: #EEE;border: 1px solid #CCC;position: relative;
+    width: 345px;margin-left: 25px;padding: 6px 3px 6px 3px;margin-top: 10px;
+}
+
+.popup-route-builder-input-holder-item {
+    background-color: rgba(0,0,0,0);border: none;font-size: 16px;width: 315px;
+}
+
+.popup-route-builder-input-holder-delete-txt {
+    color: #B0B0B0;position: absolute;top:9px;right:3px;font-size: 18px;cursor: pointer;
+}
+
+.popup-route-builder-input-holder-delete-icon {
+    color:#f99;position: absolute;top:10px;left:-20px;cursor: pointer;
+}
+
+#popup-route-builder-add-point {
+    margin: 10px 0px 20px 260px; cursor: pointer;
+}
+
+.popup-route-builder-point-change {
+    position: absolute;right: -32px;top:-20px;cursor: pointer;
+}
+

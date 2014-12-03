@@ -1,0 +1,99 @@
+{
+    "parentID":"1",
+    "parent":"Сервіс",
+    "itemID":"2",
+    "item":"Консульства",
+
+    "data":[
+        {"id":"1_2_0001","lat":49.826895,"lng":24.033315,"type":"marker16","name":"Генеральне консульство Республіки Польща",
+            "address":"Львів, вул.  Франка, 108-110","img":"../app/photo/lviv/consulates/Polsha.jpg","info":"","text":"",
+            "phone":"+380322957990","site":"http://lwow.msz.gov.pl/","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0002","lat":49.839129,"lng":24.035952,"type":"marker16","name":"Почесне консульство Федеративної Республіки Німеччини",
+            "address":"Львів, вул. Винниченка, 6","img":"../app/photo/lviv/consulates/Nimech.jpg","info":"","text":"",
+            "phone":"+380322757102","site":"http://www.kiew.diplo.de/","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0003","lat":49.826858,"lng":23.992280,"type":"marker16","name":"Генеральне консульство Чеської Республіки",
+            "address":"Львів, вул. Антоновича, 130а","img":"../app/photo/lviv/consulates/Ches.jpg","info":"","text":"",
+            "phone":"+380322976893","site":"http://www.mzv.cz/lvov/uk/","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0004","lat":49.831152,"lng":24.048343,"type":"marker16","name":"Генеральне консульство Російської Федерації",
+            "address":"Львів, вул. ","img":"../app/photo/lviv/consulates/RF.jpg","info":"","text":"",
+            "phone":"+380322750577","site":"http://www.lviv.mid.ru/","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0005","lat":49.831487,"lng":23.997631,"type":"marker16","name":"Почесне консульство Литовської Республіки",
+            "address":"Львів, вул. Героїв УПА, 72","img":"../app/photo/lviv/consulates/Lytva.jpg","info":"","text":"",
+            "phone":"+380322988935","site":"http://www.ua.mfa.lt/","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0006","lat":49.841188,"lng":24.001772,"type":"marker16","name":"Почесне консульство Федеративної Республіки Бразилії у Львові",
+            "address":"Львів, вул. Чоловського, 2","img":"../app/photo/lviv/consulates/Brazil.jpg","info":"","text":"",
+            "phone":"+380322976508","site":"","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0007","lat":49.837379,"lng":24.035471,"type":"marker16","name":"Почесне консульство Канади у Львові",
+            "address":"Львів, вул. академіка Богомольця, 2/4","img":"../app/photo/lviv/consulates/Canada.jpg","info":"","text":"",
+            "phone":"+380322971772","site":"","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0008","lat":49.829183,"lng":24.012754,"type":"marker16","name":"Почесне консульство Королівства Нідерландів у Львові",
+            "address":"Львів, вул. Академіка Андрія Сахарова, 42","img":"../app/photo/lviv/consulates/Niderlandy.jpg","info":"","text":"",
+            "phone":"+380322971906","site":"www.netherlands-embassy.com.ua","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0009","lat":49.856091,"lng":24.021288,"type":"marker16","name":"Почесне консульство Латвійської Республіки у Львові",
+            "address":"Львів, просп. Чорновола, 57","img":"../app/photo/lviv/consulates/Latviiska.jpg","info":"","text":"",
+            "phone":"+380322948220","site":"","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0010","lat":49.835904,"lng":24.031507,"type":"marker16","name":"Почесне консульство Республіки Австрія у Львові",
+            "address":"Львів, вул. просп. Шевченка, 26 (вхід з вул. Волошина)","img":"../app/photo/lviv/consulates/Aust.jpg","info":"","text":"",
+            "phone":"+380322612014","site":"http://www.bmeia.gv.at/","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0011","lat":49.835596,"lng":24.000676,"type":"marker16","name":"Почесне консульство Республіки Білорусь у Львові",
+            "address":"Львів, вул. Горської, 2","img":"../app/photo/lviv/consulates/Bilorus.jpg","info":"","text":"",
+            "phone":"+380322372730","site":"","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0012","lat":49.835648,"lng":24.034745,"type":"marker16","name":"Почесне консульство Королівства Бельгія у Львові",
+            "address":"Львів, вул. Івана Франка, 14","img":"../app/photo/lviv/consulates/Belgiya.jpg","info":"","text":"",
+            "phone":"+380322602080","site":"http://diplomatie.belgium.be/ukraine/","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0013","lat":49.840307,"lng":24.022194,"type":"marker16","name":"Британська рада у Львові",
+            "address":"Львів, вул. Університетська, 1 (Львівський національний університет, кімната 237)","img":"../app/photo/lviv/consulates/British.jpg","info":"","text":"",
+            "phone":"+380322762915","site":"","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0014","lat":49.837380,"lng":24.036595,"type":"marker16","name":"Почесне консульство Мексиканських Сполучених Штатів у Львові",
+            "address":"Львів, вул. академіка Богомольця, 15/1","img":"../app/photo/lviv/consulates/Meksyka.jpg","info":"","text":"",
+            "phone":"+380322759595","site":"","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0015","lat":49.840805,"lng":24.01579,"type":"marker16","name":"Почесне консульство Республіки Казахстан у Львові",
+            "address":"Львів, вул. Замкнена, 3/1","img":"../app/photo/lviv/consulates/Kazahstan.jpg","info":"","text":"",
+            "phone":"+380322403670","site":"","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0016","lat":49.805885,"lng":23.997375,"type":"marker16","name":"Почесне консульство Угорщини у Львові",
+            "address":"Львів, вул. Княгині Ольги, 116","img":"../app/photo/lviv/consulates/Ugor.jpg","info":"","text":"",
+            "phone":"+380322645822","site":"","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0017","lat":49.836801,"lng":24.028037,"type":"marker16","name":"Консульське агентство Французької Республіки у Львові",
+            "address":"Львів, вул. Чайковського, 20","img":"../app/photo/lviv/consulates/Fra.jpg","info":"","text":"",
+            "phone":"+380322615599","site":"","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        },
+        {"id":"1_2_0018","lat":49.838364,"lng":24.022511,"type":"marker16","name":"Почесне консульство Республіки Болгарії у Львові",
+            "address":"Львів, вул. Крушельницької, 2","img":"../app/photo/lviv/consulates/Bolgariya.jpg","info":"","text":"",
+            "phone":"","site":"","price":"","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",
+            "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"
+        }
+    ]
+}

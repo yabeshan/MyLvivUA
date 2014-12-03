@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Any Type Tour – це екскурсії і тури на буль-який смак - БЕЗКОШТОВНІ та комерційні, короткотривалі та багатоденні, самостійні, індивідуальні та групові, а ще готелі, ресторани, кафе, банкомати та багато іншої корисної інформації на карті.">
+    <meta name="keywords" content="">
+
+    <title>БЕЗКОШТОВНІ екскурсії та тури по Львову, самостійні, по карті та комерційні. Any Type Tour, Львів, Україна</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../app/css/libs/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href="../app/css/app.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="../app/icons/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="../app/iconsfavicon.ico">
+
+</head>
+<body>
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: rgba(53,60,86,.9);border-bottom: none">
+    <div class="container-fluid" style="max-width: 1150px; padding-top: 5px;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navbar-brand-logo" href="#"><span style="color: #7cd6f7;font-weight: bold">A</span>ny<span style="color: #7cd6f7;font-weight: bold">T</span>ype<span style="color: #7cd6f7;font-weight: bold">T</span>our</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="header-menu-li-bg"><a href="#about" class="header-menu-li">ПРО НАС</a></li>
+                <li class="header-menu-li-bg"><a href="catalog.html" class="header-menu-li">КАТАЛОГ</a></li>
+                <li class="header-menu-li-bg"><a href="map.html" class="header-menu-li">ЕКСКУРСІЇ ПО КАРТI</a></li>
+                <li class="header-menu-li-bg"><a href="#partners" class="header-menu-li">ПАРТНЕРИ</a></li>
+                <li class="header-menu-li-bg"><a href="#contacts" class="header-menu-li">КОНТАКТИ</a></li>
+                <!--li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#BBB"><img src="img/flag-ua.png" width="30px" height="20px"> <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" style="background-color: #DDD">
+                        <li><a href="#"><img src="img/flag-en.png" width="30px" height="20px"> ENGLISH</a></li>
+                        <li><a href="#"><img src="img/flag-ru.png" width="30px" height="20px"> RUSSIAN</a></li>
+                    </ul>
+                </li-->
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container-fluid block-direction">
+    <div class="direct-around" onclick="goAroundMe()"></div>
+    <div class="direct-location" onclick="goLocateMe()"></div>
+    <div class="direct-signup" onclick="goSignup()"></div>
+</div>
+
+<a name="about"></a>
+<div class="container-fluid block-about">
+    <div class="row">
+        <div class="block-about-left text-justify col-lg-8 col-md-7 col-sm-6">
+            <h1 class="text-center" style="color:#4d4c4c">ПРО НАС</h1>
+            <img src="../app/img/photo-pilinkevich.jpg" style="float: left;max-width: 234px;width:50%;padding-right: 30px">
+            <p>По всьому світу журналісти, фотографи, історики та інші творчі люди допомагають  мандрівникам дізнатися секрети своїх міст. Спільнота мандрівників на Тріпстере допомагає знаходити відповіді на найважливіші та каверзні питання перед поїздкою.</p>
+            <p>По всьому світу журналісти, фотографи, історики та інші творчі люди допомагають  мандрівникам дізнатися секрети своїх міст. Спільнота мандрівників на Тріпстере допомагає знаходити відповіді на найважливіші та каверзні питання перед поїздкою. По всьому світу журналісти, фотографи, історики та інші творчі люди допомагають  мандрівникам дізнатися секрети своїх міст.</p>
+        </div>
+        <div class="block-about-right text-center col-lg-4 col-md-5 col-sm-6">
+            <h1 style="color:#4d4c4c">ЛОГIН</h1>
+            <p>Через соцiальнi мережi</p>
+            <img src="../app/img/login-header-bg.jpg" style="margin-top:30%">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid block-tours">
+    <div>
+        <h1 class="text-center block-tours-title">ТУРИ</h1>
+    </div>
+    <div calss="row">
+        <div class="col-lg-2 col-md-1 hidden-sm hidden-xs"></div>
+        <div class="col-lg-3 col-md-4 col-sm-5 block-tours-column-left" style="cursor: pointer" onclick="goGatalog()">
+            <h3 class="text-center" style="color:#f3f0f0; height: 40px">Каталог екскурсій та турiв</h3>
+            <div style="border-top:  1px solid #e6c1c1;margin: 30px 0px 30px 0px"></div>
+            <p class="text-center" style="color:#e6c1c1">В Каталозі - екскурсії та тури на буль-який смак - <b><i>БЕЗКОШТОВНІ</i></b> та комерційні, самостійні, індивідуальні та групові</p><br>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+        <div class="col-lg-3 col-md-4 col-sm-5 block-tours-column-right" style="cursor: pointer" onclick="goMap()">
+            <h3 class="text-center" style="color:#f3f0f0; height: 40px">САМОСТІЙНІ ЕКСКУРСІЇ</h3>
+            <div style="border-top:  1px solid #e6c1c1;margin: 30px 0px 30px 0px"></div>
+            <p class="text-center" style="color:#e6c1c1"><b><i>БЕЗКОШТОВНІ</i></b> самостійні екскурсії по карті, пам'ятки міста, карта вулиць, готелі, ресторани, банкомати та інше</p><br>
+        </div>
+        <div class="col-lg-2 col-md-1 hidden-sm hidden-xs"></div>
+    </div>
+</div>
+
+<a name="partners"></a>
+<div class="container-fluid block-partners">
+    <div>
+        <h1 class="text-center block-partners-title">ПАРТНЕРИ</h1>
+    </div>
+    <!--<div class="block-partners-carusel text-center"><img src="../app/img/partners-block.png" style="width: 100%;max-width: 1037px;"></div>-->
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" style="height: 400px">
+            <div class="item active">
+                <div class="carusel-banner-holder">
+                    <a href="content/lviv/nabambetli.html"><img src="../app/photo/lviv/Coffee/nabambetli-logo.jpg" class="carusel-banner-img"></a>
+                    <a href="map.html?openMarker=1_2_0013"><img src="../app/photo/lviv/consulates/British.jpg" class="carusel-banner-img"></a>
+                    <a href="map.html?openMarker=2_2_0091"><img src="../app/photo/lviv/fastfood/VelykaLozhka.jpg" class="carusel-banner-img"></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="carusel-banner-holder">
+                    <a href="map.html?openMarker=3_2_0005"><img src="../app/photo/lviv/nightclub/Club%20Moloko.jpg" class="carusel-banner-img"></a>
+                    <a href="map.html?openMarker=3_1_0009"><img src="../app/photo/lviv/theatre/Slovo%20i%20golos.jpg" class="carusel-banner-img"></a>
+                    <a href="map.html?openMarker=3_4_0009"><img src="../app/photo/lviv/park/CityBouling.jpg" class="carusel-banner-img"></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="carusel-banner-holder">
+                    <a href="map.html?openMarker=1_4_0007"><img src="../app/photo/lviv/Services%20other/Oschadbank.jpg" class="carusel-banner-img"></a>
+                    <a href="map.html?openMarker=0_4_0001"><img src="../app/photo/lviv/Visit%20other/Filarmonia%20Lviv.jpg" class="carusel-banner-img"></a>
+                    <a href="map.html?openMarker=0_3_0028"><img src="../app/photo/lviv/Galleries/Madam%20Palmgren.jpg" class="carusel-banner-img"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" style="background: none;">
+            <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+            <img src="../app/img/carusel-croll-arrow-left.png" style="padding-top: 40px">
+        </a>
+
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" style="background: none;">
+            <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+            <img src="../app/img/carusel-croll-arrow-right.png" style="padding-top: 40px">
+        </a>
+    </div> <!-- Carousel -->
+
+</div>
+
+<a name="contacts"></a>
+<div class="navbar" style="background-color: #1e1d1d;margin-bottom:0px ">
+    <div class="container-fluid block-contacts">
+        <div style="width: 40%;float: right;height: 200px;padding-top: 20px">
+            Ми будемо щиро вдячні за відгуки та пропозиції<br>
+            IM'Я
+            <div class="input-group input-group-dark">
+                <span  class="input-group-addon"><span  class="glyphicon glyphicon-user"></span></span>
+                <input id="feedback-name-inp" type="text" class="form-control" placeholder="Введiть ваше iм'я">
+            </div>
+            EMAIL
+            <div class="input-group input-group-dark">
+                <span  class="input-group-addon"><span  class="glyphicon glyphicon-envelope"></span></span>
+                <input id="feedback-mail-inp" type="text" class="form-control" placeholder="Введiть ваш email">
+            </div>
+            ПОВIДОМЛЕННЯ
+            <div class="input-group input-group-dark">
+                <span  class="input-group-addon"><span  class="glyphicon glyphicon-pencil"></span></span>
+                <textarea id="feedback-comment-inp" class="form-control" rows="5" id="comment" placeholder="Введiть ваше повiдомлення"></textarea>
+            </div>
+            <button id="feedback-send-btn" type="button" class="btn btn-danger">ВIДПРАВИТИ ПОВIДОМЛЕННЯ</button>
+        </div>
+
+        <h1 style="color:#f7f5f5">Контакты</h1><br>
+        <h3 style="padding-top: 30px;color:#999">AnyTypeTour</h3>
+        <span class="glyphicon glyphicon-map-marker" style="font-size: 18px;float: left;padding-right: 10px"></span><span>79000, м. Львів</span><br><br>
+        <span class="glyphicon glyphicon-earphone" style="font-size: 18px;float: left;padding-right: 10px"></span>
+        <a href="tel:+380503859959" class="contacts-link">+38050.385.9959</a><br>
+        <span class="glyphicon glyphicon-phone-alt" style="font-size: 18px;float: left;padding-right: 10px"></span>
+        <a href="tel:+380980282494" class="contacts-link">+38098.028.2494</a><br>
+        <span class="glyphicon glyphicon-envelope" style="font-size: 18px;float: left;padding-right: 10px"></span>
+        <a href="mailto:info@any-type-tour.com" class="contacts-link">info@any-type-tour.com</a>
+
+        <div style="width: 320px;left: 50%;margin-left: -150px;position: absolute;bottom: 15px">
+            <a href="https://www.facebook.com/anytypetour"><img src="../app/img/social/facebook-circle.png" width="40px"></a>
+            <a href="https://twitter.com/AnytypeTour"><img src="../app/img/social/twitter-circle.png" width="40px"></a>
+            <a href="https://www.youtube.com/channel/UC7ecCYZaXwU3d525St4rsUA"><img src="../app/img/social/youtube-circle.png" width="40px"></a>
+            <a href="https://plus.google.com/u/0/b/110600764119157032419/+Any-type-tour"><img src="../app/img/social/googleplus-circle.png" width="40px"></a>
+            <a href="http://instagram.com/anytypetour"><img src="../app/img/social/instagram-circle.png" width="40px"></a>
+            <a href="http://vk.com/anytypetour"><img src="../app/img/social/Vk.png" width="40px"></a>
+            <!--<a href=""><img src="../app/img/social/" width="50px"></a>-->
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<script src="../app/js/jquery.min.js"></script>
+<script src="../app/js/bootstrap.js"></script>
+
+<script type='text/javascript'>
+
+    function goGatalog() {
+        window.location = 'catalog.html';
+    }
+
+    function goAroundMe() {
+        window.location = 'map.html?aroundMe';
+//        window.location = 'map.html';
+    }
+
+    function goLocateMe() {
+        window.location = 'map.html?locateMe';
+//        window.location = 'map.html';
+    }
+
+    function goMap() {
+        window.location = 'map.html';
+    }
+
+    function goSignup() {
+        window.location = 'demo.html#about';
+    }
+
+    $("#feedback-send-btn").click(function() {
+        $("#feedback-mail-inp").val("");
+        $("#feedback-name-inp").val("");
+        $("#feedback-comment-inp").val("");
+    });
+
+</script>
+
+</body></html>

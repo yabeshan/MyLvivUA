@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Any Type Tour – це екскурсії і тури на буль-який смак - БЕЗКОШТОВНІ та комерційні, короткотривалі та багатоденні, самостійні, індивідуальні та групові, а ще готелі, ресторани, кафе, банкомати та багато іншої корисної інформації на карті.">
+    <meta name="keywords" content="">
+
+    <title>БЕЗКОШТОВНІ екскурсії та тури по Львову, самостійні, по карті та комерційні. Any Type Tour, Львів, Україна</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../app/css/libs/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href="../app/css/app.css" rel="stylesheet">
+    <link href="../app/css/popup.css" rel="stylesheet">
+    <style>
+        body {
+            overflow: hidden;
+        }
+    </style>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="../app/icons/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="../app/iconsfavicon.ico">
+
+    <script>
+        setTimeout(function(){
+            if (navigator && navigator.splashscreen) {
+                navigator.splashscreen.hide();
+            }
+        }, 1000);
+    </script>
+
+</head>
+<body>
+
+
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: rgba(0,0,0,.74);border-bottom: none;height: 46px;z-index: 99;">
+    <div class="container-fluid">
+        <div class="row" style="padding-top: 10px;">
+            <div class="text-center" style="float:left;width:50px;">
+                <div style="cursor: pointer" onclick="goHome()"><span class="glyphicon glyphicon-chevron-left" style="font-weight:100;color: #838383;font-size: 28px;"></span></div>
+            </div>
+            <div class="text-center" style="float:right;width:50px;">
+                <div id="btn-search" style="cursor: pointer"><span class="glyphicon glyphicon-search" style="color: #838383;font-size: 28px;"></span></div>
+            </div>
+            <div style="width: 100%;margin: 0px 50px 0px 50px;text-align: center">
+                <div id="btn-around" style="display: inline-block;padding-right: 20px">
+                    <div class="map-dark-button" style="padding-right: 20px">
+                        <span class="glyphicon glyphicon-screenshot" style="font-weight:100;color: #838383;font-size: 18px;float: left;padding-right: 10px"></span>
+                        <span class="hidden-xs">Навколо мене</span>
+                    </div>
+                </div>
+                <div id="btn-list-tours" style="display: inline-block;padding-right: 20px">
+                    <div class="map-dark-button" style="padding-right: 20px">
+                        <span class="glyphicon glyphicon-usd" style="font-weight:100;color: #838383;font-size: 18px;float: left;padding-right: 10px"></span>
+                        <span class="hidden-xs">Екскурсії і тури на замовлення</span>
+                    </div>
+                </div>
+                <div id="btn-list-single" style="display: inline-block;padding-right: 20px">
+                    <div class="map-dark-button" style="padding-right: 20px;">
+                        <span class="glyphicon glyphicon-road" style="font-weight:100;color: #838383;font-size: 18px;float: left;padding-right: 10px"></span>
+                        <span class="hidden-xs">Самостiйнi екскурсії</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="map-canvas"></div>
+<div id="panorama-canvas"></div>
+
+<div class="navbar navbar-default navbar-fixed-bottom" role="navigation" style="background-color: rgba(255,255,255,.74);border-top: none;height:46;z-index: 99;">
+    <div class="container-fluid">
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+            <div id="btn-settings" class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="padding: 0px 5px 0px 5px;">
+                <div class="map-light-button">
+                    <span class="glyphicon glyphicon-eye-open" style="font-weight:100;color: #838383;font-size: 18px;float: left;padding-right: 10px"></span> <span class="hidden-xs">Показати на картi</span>
+                </div>
+            </div>
+            <div id="btn-trip-planner" class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="padding: 0px 5px 0px 5px;">
+                <div class="map-light-button">
+                    <span class="glyphicon glyphicon-calendar" style="font-weight:100;color: #838383;font-size: 18px;float: left;padding-right: 10px"></span> <span class="hidden-xs">Trip Planner</span>
+                </div>
+            </div>
+            <div id="btn-route-builder" class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="padding: 0px 5px 0px 5px;">
+                <div class="map-light-button">
+                    <span class="glyphicon glyphicon-random" style="font-weight:100;color: #838383;font-size: 18px;float: left;padding-right: 10px"></span> <span class="hidden-xs">Створити екскурсію</span>
+                </div>
+            </div>
+            <div id="btn-note" class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="padding: 0px 5px 0px 5px;">
+                <div class="map-light-button">
+                    <span class="glyphicon glyphicon-pencil" style="font-weight:100;color: #838383;font-size: 18px;float: left;padding-right: 10px"></span> <span class="hidden-xs">Зробити нотатку</span>
+                </div>
+            </div>
+            <div id="btn-share" class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="padding: 0px 5px 0px 5px;">
+                <div class="map-light-button">
+                    <span class="glyphicon glyphicon-retweet" style="font-weight:100;color: #838383;font-size: 18px;float: left;padding-right: 10px"></span> <span class="hidden-xs">Подiлитися</span>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+        </div>
+    </div>
+</div>
+
+<div id="panel-marker" class="container-fluid">
+    <div class="row" style="padding-top: 15px">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <div style="position:absolute;top:-10px;right:-10px;pointer-events:none">
+                <span class="glyphicon glyphicon-chevron-up" style="color: #FFF;font-size: 20px;"></span>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><div class="map-dark-button" onclick="Marker.showMarkerAroundWithType(0)">
+            <span class="glyphicon glyphicon-chevron-down" style="font-weight:100;color: #CCC;font-size: 18px;float: left;padding-right: 10px"></span>
+            Відвідати<span class="badge history-badge">0</span></div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><div class="map-dark-button" onclick="Marker.showMarkerAroundWithType(1)">
+            <span class="glyphicon glyphicon-chevron-down" style="font-weight:100;color: #CCC;font-size: 18px;float: left;padding-right: 10px"></span>
+            Сервіс<span class="badge service-badge">0</span></div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><div class="map-dark-button" onclick="Marker.showMarkerAroundWithType(2)">
+            <span class="glyphicon glyphicon-chevron-down" style="font-weight:100;color: #CCC;font-size: 18px;float: left;padding-right: 10px"></span>
+            Поїсти<span class="badge restory-badge">0</span></div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><div class="map-dark-button" onclick="Marker.showMarkerAroundWithType(3)">
+            <span class="glyphicon glyphicon-chevron-down" style="font-weight:100;color: #CCC;font-size: 18px;float: left;padding-right: 10px"></span>
+            Розваги<span class="badge enter-badge">0</span></div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <div style="position:absolute;top:-10px;left:-10px;pointer-events:none">
+                <span class="glyphicon glyphicon-chevron-up" style="color: #FFF;font-size: 20px;"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="panel-marker-detals" class="container-fluid">
+    <div class="row" style="padding-top: 15px">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <div style="position:absolute;top:-10px;right:-10px;pointer-events:none">
+                <span class="glyphicon glyphicon-chevron-up" style="color: #FFF;font-size: 20px;"></span>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><div class="map-dark-button" onclick="Marker.showMarkerAroundWithTypeAndSection(1)" style="padding-left: 20px">
+            <span id="panel-marker-detals-name-1"></span></span><span id="panel-marker-detals-1" class="badge">0</span></div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><div class="map-dark-button" onclick="Marker.showMarkerAroundWithTypeAndSection(2)" style="padding-left: 20px">
+            <span id="panel-marker-detals-name-2"></span><span  id="panel-marker-detals-2" class="badge">0</span></div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><div class="map-dark-button" onclick="Marker.showMarkerAroundWithTypeAndSection(3)" style="padding-left: 20px">
+            <span id="panel-marker-detals-name-3"></span><span  id="panel-marker-detals-3" class="badge">0</span></div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><div class="map-dark-button" onclick="Marker.showMarkerAroundWithTypeAndSection(4)" style="padding-left: 20px">
+            <span id="panel-marker-detals-name-4"></span><span  id="panel-marker-detals-4" class="badge">0</span></div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <div style="position:absolute;top:-10px;left: -10px;pointer-events:none">
+                <span class="glyphicon glyphicon-chevron-up" style="color: #FFF;font-size: 20px;"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="panel-marker-list">
+    <div class="row" style="height: 100%">
+        <div style="position:absolute;top:0px;right:10px;pointer-events:none;">
+            <span class="glyphicon glyphicon-chevron-up" style="color: #FFF;font-size: 20px;"></span>
+        </div>
+        <div id="panel-marker-list-holder"></div>
+    </div>
+</div>
+
+<div id="panel-tours-list" class="container-fluid">
+    <div class="row" style="padding-top: 5px;padding-bottom: 20px">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <div style="position:absolute;top:180px;right: 20px;pointer-events:none">
+                <span class="glyphicon glyphicon-arrow-up" style="font-weight:100;color: #FFF;font-size: 28px;"></span>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center" style="background-color: rgba(0,0,0,.5);">
+            <img src="../app/img/popup/panel-like.png" style="padding: 5px;"/>
+            <div style="overflow-y: auto;">
+                <div class="panel-group text-left" id="accordion" style="height: 160px;">
+                    <div class="panel panel-default" style="border:none">
+                        <div class="panel-tours-list-item" onclick="accordionClickHandler(1)">
+                            <span style="color:#999">01</span> Тур в Арсенал Львова
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body collapse-tour" style="padding-bottom: 120px">
+                                <img src="../app/img/tour-icons.jpg" style="float: right;width: 150px;padding-left: 20px;padding-bottom: 15px" />
+                                <img src="../app/img/tour-list-more-info.png" style="padding-left: 20px;clear: both;float: right;cursor: pointer" onclick="hidePanelListTours()" />
+                                <p>У Львові на початку XVIII столітті було встановлено перший пам'ятник в Україні — монумент гетьману Станіславу Яблоновському.У Львові на початку XVIII столітті було встановлено перший пам'ятник в Україні — монумент гетьману Станіславу Яблоновському.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" style="border:none">
+                        <div class="panel-tours-list-item" onclick="accordionClickHandler(2)">
+                            <span style="color:#999">01</span> Тур в Арсенал Львова
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body collapse-tour" style="padding-bottom: 120px">
+                                <img src="../app/img/tour-icons.jpg" style="float: right;width: 150px;padding-left: 20px;padding-bottom: 15px" />
+                                <img src="../app/img/tour-list-more-info.png" style="padding-left: 20px;clear: both;float: right;cursor: pointer" onclick="hidePanelListTours()" />
+                                <p>У Львові на початку XVIII столітті було встановлено перший пам'ятник в Україні — монумент гетьману Станіславу Яблоновському.У Львові на початку XVIII столітті було встановлено перший пам'ятник в Україні — монумент гетьману Станіславу Яблоновському.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default" style="border:none">
+                        <div class="panel-tours-list-item" onclick="accordionClickHandler(3)">
+                            <span style="color:#999">01</span> Тур в Арсенал Львова
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body collapse-tour" style="padding-bottom: 120px">
+                                <img src="../app/img/tour-icons.jpg" style="float: right;width: 150px;padding-left: 20px;padding-bottom: 15px" />
+                                <img src="../app/img/tour-list-more-info.png" style="padding-left: 20px;clear: both;float: right;cursor: pointer" onclick="hidePanelListTours()" />
+                                <p>У Львові на початку XVIII столітті було встановлено перший пам'ятник в Україні — монумент гетьману Станіславу Яблоновському.У Львові на початку XVIII столітті було встановлено перший пам'ятник в Україні — монумент гетьману Станіславу Яблоновському.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <div style="position:absolute;top:180px;left: 20px;pointer-events:none">
+                <span class="glyphicon glyphicon-arrow-up" style="font-weight:100;color: #FFF;font-size: 28px;"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="popup-search-panel">
+    <input id="pac-input" class="controls" type="text" placeholder="Пошук">
+    <div style="cursor: pointer;float: right" onclick="searchBoxHandler(event)"><span class="glyphicon glyphicon-search" style="color: #838383;font-size: 28px;"></span></div>
+    <span onclick="searchFiledsPanelDefault()" class="glyphicon glyphicon-remove" style="color: #B0B0B0;font-size: 20px;position: absolute;top:17px;right: 40px;cursor: pointer;"></span>
+    <span onclick="hideSearchPanel()" class="glyphicon glyphicon-remove-circle" style="color: #838383;font-size: 28px;position: absolute;top:-3px;right: -31px;cursor: pointer;background-color: rgba(255,255,255,.7);"></span>
+</div>
+
+
+<div id="popup-modal"></div>
+<div id="popup-info">
+    <span id="popup-info-close-btn" class="glyphicon glyphicon-remove-circle"></span>
+    <h1 id="popup-info-title"></h1>
+    <img id="popup-info-img" />
+    <div id="popup-info-nav">
+        <div id="popup-info-nav-view-map" class="popup-info-nav-btn">Показати на картi</div>
+        <div id="popup-info-nav-add-route" class="popup-info-nav-btn">Додати до екскурсії</div>
+        <div id="popup-info-nav-build-route" class="popup-info-nav-btn">Побудувати маршрут</div>
+        <div id="popup-info-nav-more-info" class="popup-info-nav-btn">Бiльше iнформацii</div>
+    </div>
+    <div id="popup-info-text">
+        <span class="glyphicon glyphicon-home popup-info-text-icon"></span><span id="popup-info-address"></span><br>
+        <span class="glyphicon glyphicon-map-marker popup-info-text-icon"></span><span id="popup-info-coord"></span><br>
+        <div id="popup-info-mobile-holder"><span class="glyphicon glyphicon-earphone popup-info-text-icon"></span><span id="popup-info-mobile"></span></div>
+        <div id="popup-info-site-holder" style="white-space: nowrap"><span class="glyphicon glyphicon-share popup-info-text-icon"></span><span id="popup-info-site"></span></div>
+        <div id="popup-info-price-holder"><span class="glyphicon glyphicon-tags popup-info-text-icon"></span><span id="popup-info-price"></span></div>
+        <!--<span class="glyphicon glyphicon-time popup-info-text-icon"></span><span id="popup-info-time-black">00:00-23:59</span> <span id="popup-info-time-red">00:00-23:59</span>-->
+        <!--<div class="top-day">пн</div><div class="bottom-day">пт</div><div class="top-day-red">сб</div><div class="bottom-day-red">вс</div>-->
+
+        <div id="audio-player-mini" style="padding-top: 10px">
+            <span class="glyphicon glyphicon-headphones popup-info-text-icon green" style="padding: 5px 10px 10px 10px;float: left"></span>
+            <span class="green" style="font-size: 11px;font-weight: bold;">“Аудіогід” для самостійних екскурсій</span>
+            <!--<audio id="audio-player-mini-tag" src=""></audio>-->
+        </div>
+
+        <div id="popup-info-details"></div>
+    </div>
+</div>
+
+<div id="popup-settings">
+    <span class="glyphicon glyphicon-remove-circle" style="pointer-events:none;color: #838383;font-size: 28px;position: absolute;top:-4px;right: -34px;cursor: pointer;background-color: rgba(255,255,255,.7);"></span>
+    <div class="drag-popup"><img src="../app/img/arrow-cursor-drag.png" width="20px"></div>
+    <h1 class="popup-settings-title">Показати на картi</h1>
+    <div class="row" style="padding: 10px;">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" style="border-right: 1px solid #dad9d9;padding-left: 40px">
+            <div class="checkbox" style="margin-left: -24px">
+                <label><input id="settings-checkbox-all-obj" type="checkbox" value="" checked><div>Всi об'екти</div></label>
+            </div>
+            <div class="checkbox">
+                <label><input id="settings-checkbox-all-obj1" type="checkbox" value=""><div>Відвідати</div></label>
+            </div>
+            <div class="checkbox">
+                <label><input id="settings-checkbox-all-obj2" type="checkbox" value=""><div>Сервіс</div></label>
+            </div>
+            <div class="checkbox">
+                <label><input id="settings-checkbox-all-obj3" type="checkbox" value=""><div>Поїсти</div></label>
+            </div>
+            <div class="checkbox">
+                <label><input id="settings-checkbox-all-obj4" type="checkbox" value=""><div>Розваги</div></label>
+            </div>
+
+            <div class="radio" style="padding-top: 30px;margin-left: -24px">
+                <label>
+                    <input type="radio" name="optionsRadios" id="settings-radio-1" value="option1" checked> Схема
+                </label>
+            </div>
+            <div class="radio" style="margin-left: -24px">
+                <label>
+                    <input type="radio" name="optionsRadios" id="settings-radio-2" value="option2"> Спутник
+                </label>
+            </div>
+            <div class="checkbox" style="margin-left: -24px">
+                <label><input id="settings-checkbox-panorama" type="checkbox" value=""><div>Включить панораму</div></label>
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 text-center">
+            <div id="popup-settings-banner">
+                <img src="../app/photo/adver/nabambetli-logo.jpg" style="cursor: pointer;" />
+                <div class="popup-settings-ad-btn" onclick='Popup.showMarkerOnMapClickHandler("2_3_0005")'>Показати на картi</div>
+                <div class="popup-settings-ad-btn" onclick='openRouteBuilerPopup("goto", "2_3_0005")'>Побудувати маршрут</div>
+                <div class="popup-settings-ad-btn" onclick='Popup.goMoreMarkerClickHandler("2_3_0005")'>Бiльше iнформацii</div>
+            </div>
+            <div id="popup-settings-list" class="text-left"></div>
+        </div>
+    </div>
+</div>
+
+<div id="popup-trip-planner">
+    <span class="glyphicon glyphicon-remove-circle" style="pointer-events:none;color: #838383;font-size: 28px;position: absolute;top:-4px;right: -34px;cursor: pointer;background-color: rgba(255,255,255,.7);"></span>
+    <h1>Trip Planner</h1>
+    <div class="coming-soon-panel">Сервіс знаходиться в стадії розробки. Просимо вибачити за тимчасові незручності.</div>
+    <img src="../app/img/popup/trip-planner-bg.png" style="width: 100%;" />
+</div>
+
+<div id="popup-route-builder">
+    <span class="glyphicon glyphicon-remove-circle" style="pointer-events:none;color: #838383;font-size: 28px;position: absolute;top:-4px;right: -34px;cursor: pointer;background-color: rgba(255,255,255,.7);"></span>
+    <div style="width: 420px;border-right: 1px solid #dad9d9;">
+        <div class="drag-popup"><img src="../app/img/arrow-cursor-drag.png" width="20px"></div>
+        <h1 class="popup-settings-title">Створити екскурсію</h1>
+        <div id="popup-route-builder-input" style="overflow-y: auto;height: 370px">
+            <div class="popup-route-builder-input-holder">
+                <input id="start-input" class="controls popup-route-builder-input-holder-item" type="text" placeholder="Початкова точка" >
+                <span class="glyphicon glyphicon-remove popup-route-builder-input-holder-delete-txt"></span>
+            </div>
+            <div class="popup-route-builder-input-holder" style="display: none">
+                <input id="point-input-1" class="controls popup-route-builder-input-holder-item" type="text" placeholder="Наступна точка" >
+                <span class="glyphicon glyphicon-remove-circle popup-route-builder-input-holder-delete-icon"></span>
+                <span class="glyphicon glyphicon-remove popup-route-builder-input-holder-delete-txt"></span>
+                <img id="change-arrow-1" class="popup-route-builder-point-change" src="../app/img/icons-change.png">
+            </div>
+            <div class="popup-route-builder-input-holder" style="display: none">
+                <input id="point-input-2" class="controls popup-route-builder-input-holder-item" type="text" placeholder="Наступна точка" >
+                <span class="glyphicon glyphicon-remove-circle popup-route-builder-input-holder-delete-icon"></span>
+                <span class="glyphicon glyphicon-remove popup-route-builder-input-holder-delete-txt"></span>
+                <img id="change-arrow-2" class="popup-route-builder-point-change" src="../app/img/icons-change.png">
+            </div>
+            <div class="popup-route-builder-input-holder" style="display: none">
+                <input id="point-input-3" class="controls popup-route-builder-input-holder-item" type="text" placeholder="Наступна точка" >
+                <span class="glyphicon glyphicon-remove-circle popup-route-builder-input-holder-delete-icon"></span>
+                <span class="glyphicon glyphicon-remove popup-route-builder-input-holder-delete-txt"></span>
+                <img id="change-arrow-3" class="popup-route-builder-point-change" src="../app/img/icons-change.png">
+            </div>
+            <div class="popup-route-builder-input-holder" style="display: none">
+                <input id="point-input-4" class="controls popup-route-builder-input-holder-item" type="text" placeholder="Наступна точка" >
+                <span class="glyphicon glyphicon-remove-circle popup-route-builder-input-holder-delete-icon"></span>
+                <span class="glyphicon glyphicon-remove popup-route-builder-input-holder-delete-txt"></span>
+                <img id="change-arrow-4" class="popup-route-builder-point-change" src="../app/img/icons-change.png">
+            </div>
+            <div class="popup-route-builder-input-holder" style="display: none">
+                <input id="point-input-5" class="controls popup-route-builder-input-holder-item" type="text" placeholder="Наступна точка" >
+                <span class="glyphicon glyphicon-remove-circle popup-route-builder-input-holder-delete-icon"></span>
+                <span class="glyphicon glyphicon-remove popup-route-builder-input-holder-delete-txt"></span>
+                <img id="change-arrow-5" class="popup-route-builder-point-change" src="../app/img/icons-change.png">
+            </div>
+            <div class="popup-route-builder-input-holder">
+                <input id="end-input" class="controls popup-route-builder-input-holder-item" type="text" placeholder="Kiнцева точка" >
+                <span class="glyphicon glyphicon-remove popup-route-builder-input-holder-delete-txt"></span>
+                <img id="change-arrow-6" class="popup-route-builder-point-change" src="../app/img/icons-change.png">
+            </div>
+            <div id="popup-route-builder-add-point">
+                Додати точку <span class="glyphicon glyphicon-plus-sign" style="color:#3dbc61;"></span>
+            </div>
+            <div id="popup-route-builder-start" class="popup-info-nav-btn" style="margin: 30px 0px 0px 100px !important;">Побудувати екскурсію</div>
+            <div class="popup-info-nav-btn" style="margin: 10px 0px 0px 100px !important;">Запам'ятати екскурсію</div>
+            <div onclick="clearRoad()" class="popup-info-nav-btn" style="margin: 30px 0px 0px 100px !important;">Відмовитись</div>
+        </div>
+    </div>
+    <div style="width:280px;position: absolute;right: 5px;top:20px">
+        <div id="popup-route-banner" class="text-center">
+            <img src="../app/photo/adver/nabambetli-logo.jpg" style="cursor: pointer;padding-left: 40px" />
+            <div class="popup-settings-ad-btn" onclick='Popup.showMarkerOnMapClickHandler("2_3_0005")'>Показати на картi</div>
+            <div class="popup-settings-ad-btn" onclick='openRouteBuilerPopup("add", "2_3_0005")'>Додати до маршруту</div>
+            <div class="popup-settings-ad-btn" onclick='Popup.goMoreMarkerClickHandler("2_3_0005")'>Бiльше iнформацii</div>
+        </div>
+        <!--<div id="popup-settings-list" class="text-left"></div>-->
+    </div>
+</div>
+
+
+<div id="popup-note">
+    <span class="glyphicon glyphicon-remove-circle" style="pointer-events:none;color: #838383;font-size: 28px;position: absolute;top:-4px;right: -34px;cursor: pointer;background-color: rgba(255,255,255,.7);"></span>
+    <h1>Нотатка</h1>
+    <div class="form-group text-center" style="padding: 10px;">
+        <div class="input-group">
+            <div class="input-group-addon"><span class="glyphicon glyphicon-pencil" style="font-weight:100;color: #838383;font-size: 18px;"></span></div>
+            <input id="popup-note-name" class="form-control" type="email" placeholder="Тема нотатки">
+        </div>
+    </div>
+    <textarea id="popup-note-text" class="form-control" rows="10" placeholder="Текст" style="width:390px; margin-left: 10px"></textarea>
+    <div id="popup-note-save-btn">Зберегти</div>
+    <div id="popup-note-cancel-btn">Cкасувати</div>
+</div>
+<div id="popup-share">
+    <span class="glyphicon glyphicon-remove-circle" style="pointer-events:none;color: #838383;font-size: 28px;position: absolute;top:-4px;right: -34px;cursor: pointer;background-color: rgba(255,255,255,.7);"></span>
+    <h1>Подiлiться з друзями</h1>
+    <img src="../app/img/popup/share.gif" />
+</div>
+
+<script type="text/javascript" src="../app/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js??v=3.exp&libraries=places&sensor=false&extension=.js&output=embed"></script>-->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&libraries=places&language=uk&sensor=false&extension=.js&output=embed"></script>
+<script type="text/javascript" src="../app/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="../app/js/app/popup.js"></script>
+<script type="text/javascript" src="../app/js/app/map.js"></script>
+<script type="text/javascript" src="../app/js/app/marker.js"></script>
+<script type="text/javascript" src="../app/js/app/app.js"></script>
+
+
+<script src="../app/js/audiojs/audio.js"></script>
+<script>
+    var audioPlayer = null;
+    audiojs.events.ready(function() {
+        var a = audiojs.createAll();
+        audioPlayer = a[0];
+    });
+</script>
+
+</body></html>

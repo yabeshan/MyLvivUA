@@ -1,0 +1,278 @@
+
+p, div, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
+.menu-flag {
+    width: 54px;
+    height: 38px;
+}
+
+.navbar-brand-logo {
+    color: #FFF !important;
+    font-size: 28px;
+}
+
+.direct-around {
+    background-color: rgba(0,0,0,.0);position: absolute;top:275px;left: 320px;width: 180px;height: 110px;cursor: pointer;
+}
+.direct-location {
+    background-color: rgba(0,0,0,.0);position: absolute;top:200px;left: 550px;width: 160px;height: 100px;cursor: pointer;
+}
+.direct-signup {
+    background-color: rgba(0,0,0,.0);position: absolute;top:430px;left: 540px;width: 170px;height: 110px;cursor: pointer;
+}
+
+.header-menu-li-bg:hover {
+    background-color: rgba(84,167,198,.9);
+}
+
+.header-menu-li {
+    color:#FFF !important;
+    font-size: 17px;
+}
+
+.block-direction {
+    max-width: 1150px;width: 100%;height: 623px;padding-top: 60px;
+    background-color: #a6dffd;
+    background-image: url(../img/photo-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.block-about {
+    max-width: 1150px;width: 100%;height: 960px;;
+    background-color: #fcfbfb;color:#7b7a7a;
+}
+.block-about-left {
+    height: 480px;
+}
+.block-about-right {
+    height: 400px;
+    background-color:#f6f4f4;
+}
+
+.block-tours {
+    max-width: 1150px;width: 100%;height: 595px;
+    background-color: #115593;color:#f3f0f0;
+    background-image: url(../img/map-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.block-tours-column-left {
+    background-color:#ea5b50;
+    margin-bottom: 10px;padding-top: 50px;
+    background-image: url(../img/tours-icon-catalog.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+.block-tours-column-right {
+    background-color:#ea5b50;
+    margin-bottom: 10px;padding-top: 50px;
+    background-image: url(../img/tours-icon-map.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+.block-tours-title {
+    color:#f3f0f0
+}
+
+.block-partners {
+    max-width: 1150px;width: 100%;height: 450px;padding: 0px;
+}
+.block-partners-title {
+    color:#4d4c4c;
+}
+#carousel-example-generic {
+    height:350px;
+}
+.carousel-indicators li {
+    background-color: #ccc;border: 1px solid #888;top:0px !important;
+}
+.carousel-indicators .active {
+    background-color: #fff;
+}
+.carusel-banner-holder {
+    position: relative;height:270px;left:50%;margin-left: -364px;top:20px;
+}
+.carusel-banner-img {
+    float: left;padding: 20px;
+}
+
+.block-contacts {
+    max-width: 1150px;width: 100%;height: 420px;
+    background-color: #1e1d1d;color:#999;font-size: 17px;line-height: 30px;
+}
+
+.contacts-link, .contacts-link > a {
+    color:#999;
+}
+.contacts-link:hover, .contacts-link:hover > a{
+    color:#F00;
+}
+.contacts-link > a {
+    padding-left: 28px;
+}
+
+#map-canvas {
+    position:absolute;width: 100%; height: 100%;top:0px;left:0px;
+    /*background-image: url(../img/google-map-bg.jpg);*/
+    /*background-position: center center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100% 100%;*/
+}
+
+.map-dark-button {
+    cursor:pointer;color:#fff; border: 1px solid #282828;padding: 5px 5px 5px 5px;width: 100%;height: 30px;
+}
+.map-dark-button:hover {
+    background-color: #282828;
+}
+
+
+.map-light-button {
+    cursor:pointer;color:#3b3a3a; border: 1px solid #dbd6d6;padding: 5px 5px 5px 5px;width: 100%;height: 30px;
+}
+.map-light-button:hover {
+    background-color: #dbd6d6;
+}
+
+
+.block-catalog {
+    max-width: 1150px;width: 100%;padding-top: 70px;
+    color:#757373;
+}
+.catalog-filter-panel {
+    background-color: #eeeeee;border: 1px solid #dddada;
+    width:100%;height: 68px;color:#8a8989;padding: 6px 0px 0px 10px;margin-bottom: 15px;
+}
+
+.catalog-badge {
+    float: right;background-color: #5b8138;color:#fff;
+}
+.catalog-tour-list-item {
+    width: 100%;min-height: 45px;padding: 10px;
+    border-bottom:  1px solid #BBB;
+    border-top: 1px solid #fff;
+    cursor: pointer;
+    background-color:#e5e5e5;
+}
+.select {
+    background-color: rgba(0,0,0,.1);
+}
+.catalog-accordion-title {
+    background-color: #9bce6b !important;border: none;height: 50px;padding-top: 15px;
+    cursor: pointer;text-decoration: none !important;
+}
+#catalog-content {
+    width: 100%;height: 100%;min-height: 500px;
+}
+.catalog-content-column {
+    width: 50%;
+}
+.catalog-content-search-item {
+    min-height: 170px;
+    background-color: #fff;border: 1px solid #e4e3e3;margin-bottom: 10px;
+    padding: 7px;
+}
+
+.catalog-content-search-item-img {
+    float: right;padding-left: 10px;cursor: pointer;
+}
+.catalog-tour-details {
+    width: 100%;height: 100%;min-height: 300px;
+    background-color: #fff;padding: 10px;
+}
+.tour-details-button {
+    width:100%; min-height: 40px;text-align: left;background-color: #aee47a;border: none;margin-bottom: 5px;
+    color:#fff;font-weight: bold;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .block-about {
+        max-width: 1150px;width: 100%;height: 580px;;
+        background-color: #fcfbfb;color:#7b7a7a;
+    }
+    .block-about-left {
+        height: 480px;top:50px;
+    }
+    .block-about-right {
+        height: 480px;top:50px;
+        background-color:#f6f4f4;
+    }
+    .block-tours-column-left, .block-tours-column-right {
+        padding-top: 150px;background-size: 200px;
+    }
+    .block-tours-title {
+        padding-bottom: 100px;color:#f3f0f0
+    }
+
+    .navbar-brand-logo {
+        font-size: 19px;
+    }
+    .header-menu-li {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-brand-logo {
+        font-size: 28px;
+    }
+    .header-menu-li {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-brand-logo {
+        font-size: 28px;
+    }
+    .header-menu-li {
+        font-size: 17px;
+    }
+}
+
+.input-group {
+    padding-bottom: 10px;
+}
+
+#feedback-send-btn {
+    padding: 5px 15px 5px 15px;float: right;
+}
+
+
+.input-group-dark > input, .input-group-dark > textarea {
+    background-color: #666;color:#fff;border: none;
+}
+.input-group-dark .input-group-addon {
+    background-color: #666;;border: none;color: #aaa;
+}
+
+.input-group-dark > input::-webkit-input-placeholder, .input-group-dark > textarea::-webkit-input-placeholder {
+    color: #aaa;
+}
+.input-group-dark > input:-moz-placeholder {
+    /* FF 4-18 */
+    color: #aaa;
+}
+.input-group-dark > input::-moz-placeholder {
+    /* FF 19+ */
+    color: #aaa;
+}
+.input-group-dark > input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #aaa;
+}
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <style>
+        div {
+            padding: 20px;width: 45%;background-color: #DDD;
+        }
+        textarea {
+            width: 100%;height: 100px;
+        }
+        h2{
+            text-align: center;margin: 5px;
+        }
+        button{
+            margin: 20px 0px 20px 40%;height: 50px;width: 150px;
+        }
+    </style>
+    <script>
+        var input, output;
+        function convertJsonToCvs() {
+            input = document.getElementById("input_json");
+            output = document.getElementById("output_cvs");
+
+            output.value  = '"","id","name","address","text"\n';
+
+            var obj = JSON.parse( '{"data":['+ input.value + ']}' );
+//            console.log ( obj );
+            var k= 0, arr = obj.data, lng=arr.length;
+            for (k;k<lng;k++) {
+//                console.log ( arr[k].name );
+                output.value  += '"","'+ arr[k].id +'","'+ arr[k].name +'","'+ arr[k].address +'","'+ arr[k].text +'"\n';
+            }
+
+//            output.value += ',"1id","1name","1address","1text"\n';
+//            output.value += ',2,22,222,2222\n';
+        }
+
+        function convertCvsToJson() {
+            input = document.getElementById("input_cvs");
+            output = document.getElementById("output_json");
+
+            output.value = input.value + '222';
+        }
+
+        function init() {
+            input = document.getElementById("input_json");
+            input.value =
+'            {"id":"0_1_0001","lat":49.852655,"lng":24.018535,"type":"marker01","name":"Музей пивоваріння",'+
+'                "address":"Львів, вул. Клепарівська, 18","img":"../app/photo/lviv/museums/muzei pyvovartinnya.jpg","info":"","text":"Львівський музей пивоваріння— перший в Україні музей пивоваріння. Музей відкритий 14 жовтня 2005 року під час святкування 290-ї річниці найстарішої броварні в Україні — Львівської пивоварні. Музей займає площу 600 квадратних метрів напівпідвальних площ Львівського пивзаводу.",'+
+'                "phone":"+380322948065","site":"http://www.lvivbeermuseum.com","price":"10-20 грн.","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",'+
+'                "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"'+
+'            },{"id":"0_1_0002","lat":49.843599,"lng":24.033341,"type":"marker01","name":"Львівський історичний музей",'+
+'                "address":"Львів, пл. Ринок, 6","img":"../app/photo/lviv/museums/Muzei Istorychnyh koshtovnostey.jpg","info":"","text":"Експозиція відділу „Історичні коштовності“ Львівського історичного музею розташована у т. зв. „королівських залах“ кам’яниці Корнякта — пам’ятки ренесансної архітектури ХVІ ст. Інтер’єри залів гармонійно доповнюють унікальні пам’ятки ХVІ - ХІХ ст. із фондових збірок музею — меблі, живопис, скульптура, годинники, музичні інструменти, порцеляна, ордени різних країн Європи та ін.",'+
+'                "phone":"+380322975367","site":"http://www.lhm.lviv.ua","price":"1-17 грн.","mon":"","tue":"","wed":"","thu":"","fri":"","sat":"","sun":"",'+
+'                "type1":"no","type2":"no","type3":"no","type4":"no","type5":"no"}';
+
+            convertJsonToCvs();
+//            input = document.getElementById("input_cvs");
+        }
+
+    </script>
+</head>
+<body onload="init()">
+
+<div style="float: left">
+    <h2>json to cvs</h2>
+    <textarea id="input_json" >input_json</textarea>
+    <button onclick="convertJsonToCvs()">convert</button>
+    <textarea id="output_cvs">output_json</textarea>
+</div>
+
+<div style="float: right">
+    <h2>cvs to json</h2>
+    <textarea id="input_cvs">input_cvs</textarea>
+    <button onclick="convertCvsToJson()">convert</button>
+    <textarea id="output_json">output_cvs</textarea>
+</div>
+
+</body>
+</html>

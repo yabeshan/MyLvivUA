@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Any Type Tour – це екскурсії і тури на буль-який смак - БЕЗКОШТОВНІ та комерційні, короткотривалі та багатоденні, самостійні, індивідуальні та групові, а ще готелі, ресторани, кафе, банкомати та багато іншої корисної інформації на карті.">
+    <meta name="keywords" content="">
+
+    <title>БЕЗКОШТОВНІ екскурсії та тури по Львову, самостійні, по карті та комерційні. Any Type Tour, Львів, Україна</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../../../app/css/libs/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../../../app/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../app/css/content.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../app/css/libs/blueimp-gallery.min.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="/favicon.ico">
+
+</head>
+<body style="background-color: #f3f3f3;">
+
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: rgba(53,60,86,.9);border-bottom: none">
+    <div class="container-fluid" style="max-width: 1150px; padding-top: 5px;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navbar-brand-logo" href="../../../demo.html"><span style="color: #7cd6f7;font-weight: bold">A</span>ny<span style="color: #7cd6f7;font-weight: bold">T</span>ype<span style="color: #7cd6f7;font-weight: bold">T</span>our</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="header-menu-li-bg"><a href="../../../demo.html#about" class="header-menu-li">ПРО НАС</a></li>
+                <li class="header-menu-li-bg"><a href="../../../catalog.html" class="header-menu-li">КАТАЛОГ</a></li>
+                <li class="header-menu-li-bg"><a href="../../../map.html" class="header-menu-li">ЕКСКУРСІЇ  ПО КАРТI</a></li>
+                <li class="header-menu-li-bg"><a href="../../../demo.html#partners" class="header-menu-li">ПАРТНЕРИ</a></li>
+                <li class="header-menu-li-bg"><a href="../../../demo.html#contacts" class="header-menu-li">КОНТАКТИ</a></li>
+                <!--li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#BBB"><img src="img/flag-ua.png" width="30px" height="20px"> <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" style="background-color: #DDD">
+                        <li><a href="#"><img src="img/flag-en.png" width="30px" height="20px"> ENGLISH</a></li>
+                        <li><a href="#"><img src="img/flag-ru.png" width="30px" height="20px"> RUSSIAN</a></li>
+                    </ul>
+                </li-->
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+
+<div class="container-fluid block-catalog">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default panel-default-content">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseA" aria-expanded="true" aria-controls="collapseA">
+                        <div class="panel-heading catalog-accordion-title" role="tab" id="headingA">
+                            <i>А - Б</i> <span class="badge catalog-badge">6</span>
+                        </div>
+                    </a>
+                    <div id="collapseA" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingA">
+                        <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/adam_mickiewicz.html')">
+                            <span class="menu-panel-list-title">Адам Міцкевич</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                        <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/uspenska_cerkva.html')">
+                            <span class="menu-panel-list-title">Ансамбль Успенської церкви</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                        <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/apteka_muzey.html')">
+                            <span class="menu-panel-list-title">Аптека-музей</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                        <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/balkon_zakokhanykh.html')">
+                            <span class="menu-panel-list-title">Балкон закоханих</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                        <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/budynok_shprehera.html')">
+                            <span class="menu-panel-list-title">Будинок Шпрехера</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                        <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/shveik.html')">
+                            <span class="menu-panel-list-title">Бравий вояк Швейк</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default panel-default-content">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseB" aria-expanded="false" aria-controls="collapseB">
+                        <div class="panel-heading catalog-accordion-title" role="tab" id="headingB">
+                            <i>В - Д</i> <span class="badge catalog-badge">8</span>
+                        </div>
+                    </a>
+                    <div id="collapseB" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingB">
+                        <div class="panel-body">
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/tower_shopkeepers.html')">
+                                <span class="menu-panel-list-title">Вежа крамарів</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/armenian_church.html')">
+                                <span class="menu-panel-list-title">Вірменський собор</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/ivasyuk.html')">
+                                <span class="menu-panel-list-title">Володимир Івасюк</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/street_archive.html')">
+                                <span class="menu-panel-list-title">Вулиця Архівна</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/george_hotel.html')">
+                                <span class="menu-panel-list-title">Готель «Жорж»</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/yevreyskiy_dvoryk.html')">
+                                <span class="menu-panel-list-title">Двір біля Вільчківської кам’яниці </span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/dominican_church.html')">
+                                <span class="menu-panel-list-title">Домініканський собор</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/pamyatnik_usmishtsi.html')">
+                                <span class="menu-panel-list-title">Драбинка в небо + пам'ятник усмішці</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default panel-default-content">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseC" aria-expanded="false" aria-controls="collapseC">
+                        <div class="panel-heading catalog-accordion-title" role="tab" id="headingC">
+                            <i>І - К</i> <span class="badge catalog-badge">7</span>
+                        </div>
+                    </a>
+                    <div id="collapseC" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingC">
+                        <div class="panel-body">
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/ivan_fedorov.html')">
+                                <span class="menu-panel-list-title">Іван Федоров</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/ignatiy.html')">
+                                <span class="menu-panel-list-title">Ігнатій Лукасевич та Ян Зег</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/italiyskyy_dvoryk.html')">
+                                <span class="menu-panel-list-title">Італійський дворик</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/kamyanitsya_alembekivska.html')">
+                                <span class="menu-panel-list-title">Кам’яниця Алембеківська</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/kamyanitsya_sholts.html')">
+                                <span class="menu-panel-list-title">Кам’яниця Шольц-Вольфовичів</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/kaplytsya_boyimiv.html')">
+                                <span class="menu-panel-list-title">Каплиця Боїмів</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/king_danylo_galician.html')">
+                                <span class="menu-panel-list-title">Король Данило Галицький</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default panel-default-content">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseD" aria-expanded="false" aria-controls="collapseD">
+                        <div class="panel-heading catalog-accordion-title" role="tab" id="headingD">
+                            <i>Л - О</i> <span class="badge catalog-badge">8</span>
+                        </div>
+                    </a>
+                    <div id="collapseD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingD">
+                        <div class="panel-body">
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/lavochka_zakohanih.html')">
+                                <span class="menu-panel-list-title">Лавочка закоханих</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/latin_cathedral.html')">
+                                <span class="menu-panel-list-title">Латинський кафедральний собор</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/leopold_von-zacher.html')">
+                                <span class="menu-panel-list-title">Леопольд фон Захер-Мазох</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/ratusha.html')">
+                                <span class="menu-panel-list-title">Львівська Ратуша</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/lvivskiy_tramvay.html')">
+                                <span class="menu-panel-list-title">Львівський трамвай</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/opera_house.html')">
+                                <span class="menu-panel-list-title">Оперний театр</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/mykhaylo_hrushevskyy.html')">
+                                <span class="menu-panel-list-title">Михайло Грушевський </span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/oschadkasa.html')">
+                                <span class="menu-panel-list-title">Ощадна каса</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default panel-default-content">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseE" aria-expanded="false" aria-controls="collapseE">
+                        <div class="panel-heading catalog-accordion-title" role="tab" id="headingE">
+                            <i>П - П</i> <span class="badge catalog-badge">10</span>
+                        </div>
+                    </a>
+                    <div id="collapseE" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingE">
+                        <div class="panel-body">
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/palats_bandinellі.html')">
+                                <span class="menu-panel-list-title">Палац Бандінеллі</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/palats_latynskykh_arkhyyepyskopiv.html')">
+                                <span class="menu-panel-list-title">Палац латинських архієпископів</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/palats_lyubomyrskykh.html')">
+                                <span class="menu-panel-list-title">Палац Любомирських</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/palats_pototskykh.html')">
+                                <span class="menu-panel-list-title">Палац Потоцьких</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/kentavr.html')">
+                                <span class="menu-panel-list-title">Пам'ятник кентавру</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/luchnyku_ta_shveyku.html')">
+                                <span class="menu-panel-list-title">Пам’ятник лучнику та Швейку</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/lvivskim_brovaryam.html')">
+                                <span class="menu-panel-list-title">Пам’ятник львівським броварям</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/nimfa_melyuzyna.html')">
+                                <span class="menu-panel-list-title">Пам’ятник німфі Мелюзині</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/pyvnyy_pup.html')">
+                                <span class="menu-panel-list-title">Пивний Пуп України</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/porokhova_vezha.html')">
+                                <span class="menu-panel-list-title">Порохова вежа</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default panel-default-content">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseF" aria-expanded="false" aria-controls="collapseF">
+                        <div class="panel-heading catalog-accordion-title" role="tab" id="headingF">
+                            <i>С - Т</i> <span class="badge catalog-badge">5</span>
+                        </div>
+                    </a>
+                    <div id="collapseF" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingF">
+                        <div class="panel-body">
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/statuya_materi_bozhoyi.html')">
+                                <span class="menu-panel-list-title">Статуя Матері Божої</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/dnister.html')">
+                                <span class="menu-panel-list-title">Страхове товариство «Дністер»</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/shevchenko.html')">
+                                <span class="menu-panel-list-title">Тараса Шевченко</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/teatr_zankovetskoy.html')">
+                                <span class="menu-panel-list-title">Театр ім. Марії Заньковецької</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default panel-default-content">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseG" aria-expanded="false" aria-controls="collapseG">
+                        <div class="panel-heading catalog-accordion-title" role="tab" id="headingG">
+                            <i>Ф - Я</i> <span class="badge catalog-badge">6</span>
+                        </div>
+                    </a>
+                    <div id="collapseG" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingG">
+                        <div class="panel-body">
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/fontany.html')">
+                                <span class="menu-panel-list-title">Фонтани на площі Ринок</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/khram_andriya_pervozvannoho.html')">
+                                <span class="menu-panel-list-title">Храм Андрія Первозванного</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/kostel_ezuitiv.html')">
+                                <span class="menu-panel-list-title">Храм Петра і Павла</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/tserkva_materi_bozhoyi.html')">
+                                <span class="menu-panel-list-title">Церква Матері Божої Неустанної Помочі</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/tserkva_preobrazhennya.html')">
+                                <span class="menu-panel-list-title">Церква Преображення Господа </span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/chorna_kamyanytsya.html')">
+                                <span class="menu-panel-list-title">Чорна кам'яниця</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                            <div class="catalog-tour-list-item" onclick="viewPage('lviv/monuments/yuri_kulchytsky.html')">
+                                <span class="menu-panel-list-title">Юрій Кульчиицький</span><span class="glyphicon glyphicon-chevron-right menu-panel-list-next"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <h2 style="margin-top: 0px !important;">Адам Міцкевич</h2>
+            <img src="../../../../app/img/popup/panel-like.png" style="float: right"/>
+            <p>Адам Міцкевич – легендарний співець-романтик, народився в грудні  1798 року в Литовській губернії, зараз це територія Білорусії . Через патріотичний настрій творів поляки вже давно вважають його своїм земляком. Не зважаючи на те, що Адам Міцкевич жодного разу не бував у Львові, на одній із найвідоміших площ міста встановлено пам’ятник «Королю Духу» як подарунок до 100-літнього ювілею від його Дня народження.</p>
+            <p>Зараз ви знаходитесь на одній з центральних площ Львова, а саме площі Адама Міцкевича. Якщо ви станете обличчям до пам’ятника, то позаду вас знаходитиметься один із найдавніших та найпопулярніших готелів – готель «Жорж», а за пам’ятником – колишній Будинок Книги. Ліворуч ви бачите статую Матері Божої, а справа від вас – будівля «Укрсоцбанку», про який досить цікаво відгукуються львів’яни. Отож, повернімося до розповіді про легендарного поета.</p>
+            <p>Адам Міцкевич – один з найулюбленіших польських поетів-романтиків та діяч національно-визвольного руху. Відомий як автор національного епосу «Пан Тадеуш», який вважають останнім величним епосом шляхетської культури Речі Посполитої. Ще за своєї юності Міцкевич познайомився з Олександром Пушкіним, з яким вони невдовзі стали досить хорошими друзями. </p>
+            <p>Перший збірник Міцкевича під назвою «Поезії» вийшов у 1822 році. Він  і став маніфестом романтичного напрямку в польській літературі. </p>
+            <p>Всі твори Адама Міцкевича написані польською мовою.</p>
+            <p>Варто сказати, що  творчість співця пов’язана також і з Україною, адже вірші Міцкевича перекладало кілька українських письменників, зокрема Петро Гулак-Артемовський та Максим Рильський. Поезією поета захоплювався сам Тарас Шевченко. </p>
+            <p>Завдяки великій популярності Адама Міцкевича в Україні, пам’ятники в честь поета можна побачити в багатьох містах. Варто зазначити, що один з них знаходиться також і у Львові, а саме на площі, яка носить ім’я поета. Саме цей пам’ятник визнано одним з найкрасивіших пам’ятників Міцкевичу у світі. </p>
+            <p>Потрібно сказати, що цей пам’ятник не лише один з найкрасивіших, але й, можливо, найцікавіший. Якщо уважно придивитеся до статуї – безперечно, будете приємно здивованими!...</p>
+
+
+            <div style="width: 100%;height: 150px;background-color: #FFF;padding: 10px;color: #009;font-weight: bold">
+                Блок социальных комментариев
+            </div>
+            <p></p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding:0px;">
+            <div id="links" data-slideshow="100" class="modal-fullscreen">
+                <a href="../../../../app/photo/lviv/monuments/adam_mickiewicz/Lvov,%20Adam%20Mitskevich-4.jpg" data-gallery="#blueimp-gallery-fullscreen">
+                    <img src="../../../../app/photo/lviv/monuments/Mitskevych.jpg" class="thumb-big" />
+                </a>
+                <a href="../../../../app/photo/lviv/monuments/adam_mickiewicz/Lvov,%20Adam%20Mitskevich-2.jpg" data-gallery="#blueimp-gallery-fullscreen">
+                    <img src="../../../../app/photo/lviv/monuments/adam_mickiewicz/Lvov,-Adam-Mitskevich-2_micro.png" class="thumb-small" />
+                </a>
+                <a href="../../../../app/photo/lviv/monuments/adam_mickiewicz/Lvov,%20Adam%20Mitskevich-3.jpg" data-gallery="#blueimp-gallery-fullscreen">
+                    <img src="../../../../app/photo/lviv/monuments/adam_mickiewicz/Lvov,-Adam-Mitskevich-3_micro.png" class="thumb-small" />
+                </a>
+                <a href="../../../../app/photo/lviv/monuments/adam_mickiewicz/Lvov,%20Adam%20Mitskevich.jpg" data-gallery="#blueimp-gallery-fullscreen">
+                    <img src="../../../../app/photo/lviv/monuments/adam_mickiewicz/Lvov,-Adam-Mitskevich_micro.png" class="thumb-small" />
+                </a>
+                <a href="../../../../app/photo/lviv/monuments/adam_mickiewicz/Lvov,%20Adam%20Mitskevichjpg.jpg" data-gallery="#blueimp-gallery-fullscreen">
+
+                </a>
+                <a href="../../../../app/photo/lviv/monuments/adam_mickiewicz/Lvov,%20Adam%20Mitskevich_111.jpg" data-gallery="#blueimp-gallery-fullscreen">
+
+                </a>
+            </div>
+
+            <!--<div id="audio-player-mini" style="overflow: hidden">-->
+            <!--<audio id="audio-player-mini-tag" src=""></audio>-->
+            <!--</div>-->
+            <iframe width="273" height="170" src="http://www.youtube.com/embed/ShQLMMq2lK0" frameborder="0" allowfullscreen></iframe>
+            <div style="width: 283px;background-color: #DDD;min-height: 100px" class="text-center">
+                <div style="height: 30px;font-weight: bold">Рекомендованi eкскурсії та тури</div>
+                <div class="text-left">
+                    <div class="catalog-tour-list-item">
+                        <span style="color:#999">01</span> Тур в Арсенал Львова
+                        <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                    </div>
+                    <div class="catalog-tour-list-item" onclick="viewTour()">
+                        <span style="color:#999">02</span> Тур по галереях Львова
+                        <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                    </div>
+                    <div class="catalog-tour-list-item" onclick="viewTour()">
+                        <span style="color:#999">03</span> Тур по пам’яткам Львова
+                        <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                    </div>
+                    <div class="catalog-tour-list-item" onclick="viewTour()">
+                        <span style="color:#999">04</span> Тур по соборах Львова
+                        <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                    </div>
+                    <div class="catalog-tour-list-item" onclick="viewTour()">
+                        <span style="color:#999">05</span> Тур по розважальних місцях
+                        <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="navbar navbar-default" style="background-color: #1e1d1d;margin-bottom:0px;padding: 20px;border-radius: 0px;border: none">
+    <div class="container-fluid">
+        <div style="float: left;color:#999;">
+            <span style="color:#999;padding-left: 28px">AnyTypeTour  </span>  &copy; 2014<br>
+            <span class="glyphicon glyphicon-envelope" style="font-size: 18px;float: left;padding-right: 10px"></span>
+            <a href="mailto:info@any-type-tour.com" class="contacts-link">info@any-type-tour.com</a>
+        </div>
+        <div style="width: 320px;left: 50%;margin-left: -150px;position: absolute">
+            <a href="https://www.facebook.com/anytypetour"><img src="../../../../app/img/social/facebook-circle.png" width="40px"></a>
+            <a href="https://twitter.com/AnytypeTour"><img src="../../../../app/img/social/twitter-circle.png" width="40px"></a>
+            <a href="https://www.youtube.com/channel/UC7ecCYZaXwU3d525St4rsUA"><img src="../../../../app/img/social/youtube-circle.png" width="40px"></a>
+            <a href="https://plus.google.com/u/0/b/110600764119157032419/+Any-type-tour"><img src="../../../../app/img/social/googleplus-circle.png" width="40px"></a>
+            <a href="http://instagram.com/anytypetour"><img src="../../../../app/img/social/instagram-circle.png" width="40px"></a>
+            <a href="http://vk.com/anytypetour"><img src="../../../../app/img/social/Vk.png" width="40px"></a>
+            <!--<a href=""><img src="../../app/img/social/" width="50px"></a>-->
+        </div>
+        <div style="float: right;color:#999;">
+            <span class="glyphicon glyphicon-earphone" style="font-size: 18px;float: left;padding-right: 10px"></span>
+            <a href="tel:+380503859959" class="contacts-link">+38050.385.9959</a><br>
+            <span class="glyphicon glyphicon-phone-alt" style="font-size: 18px;float: left;padding-right: 10px"></span>
+            <a href="tel:+380980282494" class="contacts-link">+38098.028.2494</a><br>
+        </div>
+    </div>
+</div>
+
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+<script src="../../../../app/js/jquery.min.js"></script>
+<script src="../../../../app/js/bootstrap.js"></script>
+<script src="../../../../app/js/jquery.blueimp-gallery.min.js"></script>
+<script src="../../../../app/js/audiojs/audio.js"></script>
+<script src="../../../../app/js/app/content.js"></script>
+<script>
+    var audioPlayer = null;
+    audiojs.events.ready(function() {
+        var a = audiojs.createAll();
+        audioPlayer = a[0];
+        audioPlayer.load( "../../../mp3/lviv/soldier_Schweik.mp3" );
+        setTimeout(function(){
+            audioPlayer.play();
+        },2000);
+    });
+</script>
+
+<script type='text/javascript'>
+
+    function viewMap() {
+        window.location = 'map.html';
+    }
+    $('#blueimp-gallery').data('fullScreen', 'true');
+
+    function viewPage(id) {
+//        var url="http://any-type-tour.com/";
+//        window.location = url;
+    }
+
+</script>
+
+</body></html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Any Type Tour – це екскурсії і тури на буль-який смак - БЕЗКОШТОВНІ та комерційні, короткотривалі та багатоденні, самостійні, індивідуальні та групові, а ще готелі, ресторани, кафе, банкомати та багато іншої корисної інформації на карті.">
+    <meta name="keywords" content="">
+
+    <title>БЕЗКОШТОВНІ екскурсії та тури по Львову, самостійні, по карті та комерційні. Any Type Tour, Львів, Україна</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../app/css/libs/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href="../app/css/app.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="../app/icons/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="../app/iconsfavicon.ico">
+
+</head>
+<body style="background-color: #f3f3f3;">
+
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: rgba(53,60,86,.9);border-bottom: none">
+    <div class="container-fluid" style="max-width: 1150px; padding-top: 5px;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navbar-brand-logo" href="demo.html"><span style="color: #7cd6f7;font-weight: bold">A</span>ny<span style="color: #7cd6f7;font-weight: bold">T</span>ype<span style="color: #7cd6f7;font-weight: bold">T</span>our</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="header-menu-li-bg"><a href="demo.html#about" class="header-menu-li">ПРО НАС</a></li>
+                <li class="header-menu-li-bg" style="background-color: rgba(84,167,198,.7);"><a href="catalog.html" class="header-menu-li">КАТАЛОГ</a></li>
+                <li class="header-menu-li-bg"><a href="map.html" class="header-menu-li">ЕКСКУРСІЇ  ПО КАРТI</a></li>
+                <li class="header-menu-li-bg"><a href="demo.html#partners" class="header-menu-li">ПАРТНЕРИ</a></li>
+                <li class="header-menu-li-bg"><a href="demo.html#contacts" class="header-menu-li">КОНТАКТИ</a></li>
+                <!--li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#BBB"><img src="img/flag-ua.png" width="30px" height="20px"> <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" style="background-color: #DDD">
+                        <li><a href="#"><img src="img/flag-en.png" width="30px" height="20px"> ENGLISH</a></li>
+                        <li><a href="#"><img src="img/flag-ru.png" width="30px" height="20px"> RUSSIAN</a></li>
+                    </ul>
+                </li-->
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+
+<div class="container-fluid block-catalog">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-5 col-xs-6">
+            <div class="catalog-filter-panel">
+                Країна / Місто
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"  style="width:90%;padding: 0px;background-color: #f9f8f8">
+                        <span style="float: left;padding: 5px">Львiв</span>
+                        <span class="glyphicon glyphicon-chevron-down" style="float: right;background-color:#54a7c6;color:#fff;width:30px;height:30px;padding-top: 9px"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Країна / Місто 1</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Країна / Місто 2</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Країна / Місто 3</a></li>
+                    </ul>
+                </div>
+                <div style="padding-top: 7px;font-size: 20px;" class="text-center">Екскурсії та тури</div>
+            </div>
+
+
+            <div class="panel-group" id="accordion" style="padding-top: 12px">
+                <div class="panel" style="background-color:#e5e5e5;border: none;">
+                    <div class="panel-heading catalog-accordion-title" onclick="viewSearchResult()">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#accordionOne" style="color: #fff">САМОСТІЙНІ ТУРИ</a><span class="badge catalog-badge">115</span>
+                        </h4>
+                    </div>
+                    <div id="accordionOne" class="panel-collapse collapse in">
+                        <div class="panel-body" style="padding: 0px" onclick="viewTour()">
+                            <div class="catalog-tour-list-item">
+                                <span style="color:#999">01</span> Тур в Арсенал Львова
+                                <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                            </div>
+                            <div class="catalog-tour-list-item" onclick="viewTour()">
+                                <span style="color:#999">02</span> Тур по галереях Львова
+                                <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                            </div>
+                            <div class="catalog-tour-list-item" onclick="viewTour()">
+                                <span style="color:#999">03</span> Тур по пам’яткам Львова
+                                <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                            </div>
+                            <div class="catalog-tour-list-item" onclick="viewTour()">
+                                <span style="color:#999">04</span> Тур по соборах Львова
+                                <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                            </div>
+                            <div class="catalog-tour-list-item" onclick="viewTour()">
+                                <span style="color:#999">05</span> Тур по розважальних місцях
+                                <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel" style="background-color:#e5e5e5;border: none">
+                    <div class="panel-heading catalog-accordion-title" onclick="viewSearchResult()">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#accordionTwo" style="color: #fff">ТУРИ НА ЗАМОВЛЕННЯ</a><span class="badge catalog-badge">95</span>
+                        </h4>
+                    </div>
+                    <div id="accordionTwo" class="panel-collapse collapse">
+                        <div class="panel-body" style="padding: 0px">
+                            <div class="catalog-tour-list-item" onclick="viewTour()">
+                                <span style="color:#999">01</span> Тур в Арсенал Львова
+                                <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                            </div>
+                            <div class="catalog-tour-list-item" onclick="viewTour()">
+                                <span style="color:#999">02</span> Тур по галереях Львова
+                                <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                            </div>
+                            <div class="catalog-tour-list-item" onclick="viewTour()">
+                                <span style="color:#999">03</span> Тур по пам’яткам Львова
+                                <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                            </div>
+                            <div class="catalog-tour-list-item" onclick="viewTour()">
+                                <span style="color:#999">04</span> Тур по соборах Львова
+                                <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                            </div>
+                            <div class="catalog-tour-list-item" onclick="viewTour()">
+                                <span style="color:#999">05</span> Тур по розважальних місцях
+                                <span class="glyphicon glyphicon-chevron-right" style="float:right;color: #FFF;text-shadow: -1px 0px #000"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-9 col-md-8 col-sm-7 col-xs-6">
+            <div class="catalog-filter-panel">
+                <div style="width: 20%;float: left">
+                    Тип екскурсії :
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"  style="width:90%;padding: 0px;background-color: #f9f8f8">
+                            <span style="float: left;padding: 5px">Всi</span>
+                            <span class="glyphicon glyphicon-chevron-down" style="float: right;background-color:#54a7c6;color:#fff;width:30px;height:30px;padding-top: 9px"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Тип екскурсії 1</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Тип екскурсії 2</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Тип екскурсії 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="width: 20%;float: left">
+                    Кількість днів :
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown"  style="width:90%;padding: 0px;background-color: #f9f8f8">
+                            <span style="float: left;padding: 5px">1 - 30</span>
+                            <span class="glyphicon glyphicon-chevron-down" style="float: right;background-color:#54a7c6;color:#fff;width:30px;height:30px;padding-top: 9px"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1 - 5</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5 - 10</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 - 30</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="width: 20%;float: left">
+                    Кількість годин :
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown"  style="width:90%;padding: 0px;background-color: #f9f8f8">
+                            <span style="float: left;padding: 5px">1 - 24</span>
+                            <span class="glyphicon glyphicon-chevron-down" style="float: right;background-color:#54a7c6;color:#fff;width:30px;height:30px;padding-top: 9px"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1 - 2</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2 - 5</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5 - 12</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="width: 20%;float: left">
+                    Компанія :
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown"  style="width:90%;padding: 0px;background-color: #f9f8f8">
+                            <span style="float: left;padding: 5px">Всi</span>
+                            <span class="glyphicon glyphicon-chevron-down" style="float: right;background-color:#54a7c6;color:#fff;width:30px;height:30px;padding-top: 9px"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu5">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Компанія 1</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Компанія 2</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Компанія 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="width: 20%;float: left">
+
+                </div>
+            </div>
+            <div id="catalog-content">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="navbar navbar-default navbar-fixed-bottom" style="background-color: #1e1d1d;margin-bottom:0px;padding: 20px; ">
+    <div class="container-fluid">
+        <div style="float: left;color:#999;">
+            <span style="color:#999;padding-left: 28px">AnyTypeTour  </span>  &copy; 2014<br>
+            <span class="glyphicon glyphicon-envelope" style="font-size: 18px;float: left;padding-right: 10px"></span>
+            <a href="mailto:info@any-type-tour.com" class="contacts-link">info@any-type-tour.com</a>
+        </div>
+        <div style="width: 320px;left: 50%;margin-left: -150px;position: absolute">
+            <a href="https://www.facebook.com/anytypetour"><img src="../app/img/social/facebook-circle.png" width="40px"></a>
+            <a href="https://twitter.com/AnytypeTour"><img src="../app/img/social/twitter-circle.png" width="40px"></a>
+            <a href="https://www.youtube.com/channel/UC7ecCYZaXwU3d525St4rsUA"><img src="../app/img/social/youtube-circle.png" width="40px"></a>
+            <a href="https://plus.google.com/u/0/b/110600764119157032419/+Any-type-tour"><img src="../app/img/social/googleplus-circle.png" width="40px"></a>
+            <a href="http://instagram.com/anytypetour"><img src="../app/img/social/instagram-circle.png" width="40px"></a>
+            <a href="http://vk.com/anytypetour"><img src="../app/img/social/Vk.png" width="40px"></a>
+            <!--<a href=""><img src="../app/img/social/" width="50px"></a>-->
+        </div>
+        <div style="float: right;color:#999;padding-right: 70px">
+            <span class="glyphicon glyphicon-earphone" style="font-size: 18px;float: left;padding-right: 10px"></span>
+            <a href="tel:+380503859959" class="contacts-link">+38050.385.9959</a><br>
+            <span class="glyphicon glyphicon-phone-alt" style="font-size: 18px;float: left;padding-right: 10px"></span>
+            <a href="tel:+380980282494" class="contacts-link">+38098.028.2494</a><br>
+        </div>
+    </div>
+</div>
+
+
+<script src="../app/js/jquery.min.js"></script>
+<script src="../app/js/bootstrap.js"></script>
+
+
+
+<script type='text/javascript'>
+
+    $(document).ready(function() {
+        viewSearchResult();
+    });
+
+    function viewTour() {
+        var searchResult = '<div class="catalog-tour-details">'+
+                '<div class="row"><div class="col-lg-3"><img src="../app/img/tour-icons.jpg" style="width: 100%" /><br><img src="../app/img/tour-icons.jpg" style="width: 32%;padding: 2px 2px 0px 0px;" /><img src="../app/img/tour-icons.jpg" style="width: 32%;padding: 2px 2px 0px 0px;" /><img src="../app/img/tour-icons.jpg" style="width: 32%;padding: 2px 2px 0px 0px;" /></div><div class="col-lg-7" style="line-height: 30px"><h3 style="margin: 0px">Тур по соборах Львова</h3><br><span style="color:#000">Тип туру:</span> Самостійні<br><span style="color:#000">Країна / Місто:</span> Україна, Львів<br><span style="color:#000">Спосіб пересування:</span> пішки<br><span style="color:#000">Кількість днів:</span> 1 день<br><span style="color:#000">Кількість годин:</span> 5 годин</div><div class="col-lg-2" style="font-size: 11px"><img src="../app/img/tour-details-icons.png" />Тур представлений компанією «Dnister»</div></div>'+
+                '<div class="row"><div class="col-lg-8">У Львові на початку XVIII столітті було встановлено перший пам\'ятник в Україні — монумент гетьману Станіславу  Яблоновському.У Львові на початку XVIII столітті було встановлено перший пам\'ятник в Україні — монумент гетьману Станіславу  Яблоновському.</div><div class="col-lg-4 text-right"><br><br><button class="tour-details-button">Замовити</button><br><button class="tour-details-button" onclick="viewMap()">Перглянути на картi</button><br><button class="tour-details-button" onclick="viewSearchResult()">Повернутися до списку</button></div></div>'+
+                '</div>';
+        $('#catalog-content').html(searchResult);
+    }
+
+    function viewSearchResult() {
+        var searchResult = '<div class="catalog-content-column" style="float: left;padding-right: 5px">'+
+                '<div class="catalog-content-search-item"><div><img src="../app/img/tour-icons.jpg" class="catalog-content-search-item-img" onclick="viewTour()"/><h4>Тур по соборах Львова</h4>У Львові на початку XVIII столітті було встановлено перший пам\'ятник в Україні — монумент гетьману Станіславу  Яблоновському...<br></div><div><img src="../app/img/catalog-icon-info.png" class="catalog-content-search-item-img" onclick="viewTour()"/><img src="../app/img/catalog-icon-map.png" class="catalog-content-search-item-img" onclick="viewMap()"/></div></div>'+
+                '<div class="catalog-content-search-item"><div><img src="../app/img/tour-icons.jpg" class="catalog-content-search-item-img" onclick="viewTour()"/><h4>Тур по соборах Львова</h4>У Львові на початку XVIII столітті було встановлено перший пам\'ятник в Україні — монумент гетьману Станіславу  Яблоновському...<br></div><div><img src="../app/img/catalog-icon-info.png" class="catalog-content-search-item-img" onclick="viewTour()"/><img src="../app/img/catalog-icon-map.png" class="catalog-content-search-item-img" onclick="viewMap()"/></div></div>'+
+                '</div><div class="catalog-content-column" style="float: right;padding-left: 5px">'+
+                '<div class="catalog-content-search-item"><div><img src="../app/img/tour-icons.jpg" class="catalog-content-search-item-img" onclick="viewTour()"/><h4>Тур по соборах Львова</h4>У Львові на початку XVIII столітті було встановлено перший пам\'ятник в Україні — монумент гетьману Станіславу  Яблоновському...<br></div><div><img src="../app/img/catalog-icon-info.png" class="catalog-content-search-item-img" onclick="viewTour()"/><img src="../app/img/catalog-icon-map.png" class="catalog-content-search-item-img" onclick="viewMap()"/></div></div>'+
+                '<div class="catalog-content-search-item"><div><img src="../app/img/tour-icons.jpg" class="catalog-content-search-item-img" onclick="viewTour()"/><h4>Тур по соборах Львова</h4>У Львові на початку XVIII столітті було встановлено перший пам\'ятник в Україні — монумент гетьману Станіславу  Яблоновському...<br></div><div><img src="../app/img/catalog-icon-info.png" class="catalog-content-search-item-img" onclick="viewTour()"/><img src="../app/img/catalog-icon-map.png" class="catalog-content-search-item-img" onclick="viewMap()"/></div></div>'+
+                '</div>';
+        $('#catalog-content').html(searchResult);
+    }
+
+    function viewMap() {
+        window.location = 'map.html';
+    }
+
+</script>
+
+</body></html>
