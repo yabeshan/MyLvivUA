@@ -12,9 +12,11 @@
 
         <script>
             var onDeviceReady = function() {
-                alert("onDeviceReady");
                 if (navigator && navigator.splashscreen) {
                     navigator.splashscreen.show();
+                    alert("show = " + navigator.splashscreen.show );
+                } else {
+                    alert("navigator = " + navigator );
                 }
                 window.onload = function(){};
                 window.location='ua/map.html';
@@ -27,8 +29,6 @@
                 }
             };
 
-            alert(111);
-            
         </script>
     </head>
     <body>
