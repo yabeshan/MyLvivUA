@@ -14,12 +14,12 @@
             var onDeviceReady = function() {
                 if (navigator && navigator.splashscreen) {
                     navigator.splashscreen.show();
-                    alert("show = " + navigator.splashscreen.show );
-                } else {
-                    alert("navigator = " + navigator );
                 }
                 window.onload = function(){};
-                window.location='ua/map.html';
+
+                setTimeout(function(){
+                    window.location='ua/map.html';
+                }, 5000);
             };
 
             document.addEventListener('deviceready', onDeviceReady, false);

@@ -29,8 +29,11 @@
         setTimeout(function(){
             if (navigator && navigator.splashscreen) {
                 navigator.splashscreen.hide();
+                alert( "hide = " + navigator.splashscreen.hide );
+            } else {
+                alert( "hide = " + navigator );
             }
-        }, 1000);
+        }, 6000);
     </script>
 
 </head>
