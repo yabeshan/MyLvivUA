@@ -11,24 +11,7 @@
         <script type="text/javascript" src="phonegap.js"></script>
 
         <script>
-            var onDeviceReady = function() {
-                if (navigator && navigator.splashscreen) {
-                    navigator.splashscreen.show();
-                }
-                window.onload = function(){};
-
-                setTimeout(function(){
-                    window.location='ua/map.html';
-                }, 5000);
-            };
-
-            document.addEventListener('deviceready', onDeviceReady, false);
-            window.onload=function(){
-                if( document.URL.indexOf('file:///D:/Nick_work/') == 0) {
-                    setTimeout( onDeviceReady, 1000 );
-                }
-            };
-
+            window.location='ua/demo.html';
         </script>
     </head>
     <body>

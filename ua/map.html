@@ -25,22 +25,6 @@
     <link rel="apple-touch-icon-precomposed" href="../app/icons/apple-touch-icon-precomposed.png">
     <link rel="icon" href="../app/iconsfavicon.ico">
 
-    <script>
-        var onDeviceReady = function() {
-            alert("onDeviceReady");
-            setTimeout(function(){
-                if (navigator && navigator.splashscreen) {
-                    navigator.splashscreen.hide();
-                    alert( "hide = " + navigator.splashscreen.hide );
-                } else {
-                    alert( "navigator = " + navigator );
-                }
-            }, 6000);
-        };
-
-        document.addEventListener('deviceready', onDeviceReady, false);
-    </script>
-
 </head>
 <body>
 
